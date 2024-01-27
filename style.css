@@ -116,6 +116,11 @@
     color: #06283D;
 }
 
+.p-view {
+    display: -webkit-box;
+}
+
+
 
 
 
