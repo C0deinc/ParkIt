@@ -72,4 +72,51 @@
 
 /*BROWSE PAGE*/
 
+/*PROFILE PAGE*/
 
+.profile-section-one {
+    width: 100%;
+    height: 75vh;
+    background-color: #47B5FF;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid #DFF6FF;
+}
+
+.profile-email p {
+    color: #DFF6FF;
+}
+
+.parkit-wallet-container {
+    border-bottom: 1px solid lightgray;
+}
+
+.parkit-wallet p {
+    color: #06283D;
+}
+
+.p-wallet {
+    color: #47B5FF;
+}
+
+.p-amount {
+    background-color: rgba(71, 181, 255, 0.5);
+    width: 3.5rem;
+    height: 1.5rem;
+}
+
+.p-balance p {
+    color: gray;
+}
+
+.p-lists-container a {
+    color: #06283D;
+}
+
+
+
+
+/*PROFILE PAGE*/
