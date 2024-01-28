@@ -43,16 +43,7 @@
 
 /*BROWSE PAGE*/
 
-.search-header {
-    box-shadow: 1px 1px 3px gray;
-}
 
-.sh-input {
-    width: 50rem;
-    height: 3rem;
-    border: 1px solid #06283D;
-    border-radius: 0.8rem;
-}
 
 /*BROWSE PAGE*/
 
@@ -100,10 +91,5 @@
 .p-lists-container p {
     color: #06283D;
 }
-
-
-
-
-
 
 /*PROFILE PAGE*/
