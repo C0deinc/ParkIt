@@ -61,3 +61,7 @@ body {
     margin: 8px 0;
 }
 
+#updatedTime, #raisedAmount {
+    font-size: small;
+    color: gray;
+}
