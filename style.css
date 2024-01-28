@@ -17,10 +17,6 @@
     height: 100vh;
 }
 
-.background-container, h2, p {
-    color: #06283D;
-}
-
 .bc-text {
     margin-right: 20rem;
 }
@@ -29,26 +25,14 @@
     width: fit-content;
 }
 
-.section-two {
-    background-color: #DFF6FF;
-}
-
 .section-two img {
     width: 3rem;
     height: 3rem;
 }
 
-.section-three {
-    background-color: #47B5FF;
-}
-
 .section-three img {
     width: 5rem;
     height: 5rem;
-}
-
-.section-three p {
-    color: #DFF6FF;
 }
 
 .btn-find {
@@ -86,20 +70,8 @@
     border: 2px solid #DFF6FF;
 }
 
-.profile-email p {
-    color: #DFF6FF;
-}
-
 .parkit-wallet-container {
     border-bottom: 1px solid lightgray;
-}
-
-.parkit-wallet p {
-    color: #06283D;
-}
-
-.p-wallet {
-    color: #47B5FF;
 }
 
 .p-amount {
@@ -108,17 +80,27 @@
     height: 1.5rem;
 }
 
-.p-balance p {
-    color: gray;
+.p-view-profile, .p-my-reviews, .p-my-vehicle, .p-my-rentals, .p-history, .p-help-center {
+    display: -webkit-box;
 }
 
-.p-lists-container a {
+.p-help-center {
+    border-bottom: 1px solid lightgray;
+}
+
+.parkit-wallet-container:hover, .p-view-profile:hover, .p-my-reviews:hover, .p-my-vehicle:hover, .p-my-rentals:hover, .p-history:hover, .p-help-center:hover, .p-settings:hover, .p-terms-condition-privacy:hover, .p-switch-to-space-owner:hover, .p-logout:hover {
+    background-color: rgba(83, 83, 83, 0.1);
+}
+
+.p-switch-to-space-owner {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.p-lists-container p {
     color: #06283D;
 }
 
-.p-view {
-    display: -webkit-box;
-}
 
 
 
