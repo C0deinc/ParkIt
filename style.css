@@ -134,6 +134,10 @@
     color: gray;
 }
 
+.ls-descriptions {
+    display: -webkit-box;
+}
+
 
 
 /*PARKING LOT SPACE*/
