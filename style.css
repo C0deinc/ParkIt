@@ -43,7 +43,26 @@
 
 /*BROWSE PAGE*/
 
+.lot-name {
+    display: -webkit-box;
+    border-bottom: 1px solid lightgray;
+}
 
+.ls-space-owner-profile {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #DFF6FF;
+}
+
+.ls-section-one {
+    border-bottom: 1px solid lightgray;
+}
+
+@media(min-width: 414px) {
+    .space-owner-info {
+        justify-content: center;
+    }
+}
 
 /*BROWSE PAGE*/
 
@@ -93,3 +112,28 @@
 }
 
 /*PROFILE PAGE*/
+
+/*PARKING LOT SPACE*/
+
+.ls-hourly, .ls-daily, .ls-weekly, .ls-monthly {
+    border: 1px solid lightgray;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.ls-base-rate {
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.ls-small-text {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+
+/*PARKING LOT SPACE*/
