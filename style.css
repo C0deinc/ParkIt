@@ -134,10 +134,18 @@
     color: gray;
 }
 
-.ls-descriptions {
+.ls-descriptions, .ls-cash {
     display: -webkit-box;
 }
 
+.gcash-img {
+    width: 8rem;
+    height: 5rem;
+}
+
+.dropdown .btn {
+    border: 1px solid lightgray;
+}
 
 
 /*PARKING LOT SPACE*/
