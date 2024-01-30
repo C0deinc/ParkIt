@@ -33,7 +33,7 @@
             require_once('./include/sidebar.php');
             ?>
             <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 10px;">
                 <div class="d-flex justify-content-center align-items-center pt-3 text-center">
                     <h1 class="h2 mx-auto">Overview</h1>
                 </div>
@@ -45,7 +45,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">
-                                        <img src="user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        <img src="/admin/images/user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
                                         Total Users
                                     </h5>
                                     <p class="card-text text-center" style="font-size: 25px">100</p>
@@ -58,7 +58,7 @@
                             <div class="card">
                                  <div class="card-body">
                                     <h5 class="card-title text-center">
-                                        <img src="space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        <img src="/admin/images/space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
                                         Total Space
                                     </h5>
                                     <p class="card-text text-center" style="font-size: 25px">500</p>
@@ -71,7 +71,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">
-                                        <img src="commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        <img src="/admin/images/commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
                                         Total Commission
                                     </h5>
                                     <p class="card-text text-center" style="font-size: 25px">100</p>
@@ -114,7 +114,7 @@
                             
                                         <!-- Right side: Image -->
                                         <div class="ml-5">
-                                            <img src="profit.png" alt="Image" class="img-fluid" width="70" height="70">
+                                            <img src="/admin/images/prof" alt="Image" class="img-fluid" width="70" height="70">
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                     
                                             <!-- Right side: Image -->
                                             <div class="ml-5">
-                                                <img src="wallets.png" alt="Image" class="img-fluid" width="70" height="70">
+                                                <img src="/admin/images/wallet.png" alt="Image" class="img-fluid" width="70" height="70">
                                             </div>
                                         </div>
                                     </div>
