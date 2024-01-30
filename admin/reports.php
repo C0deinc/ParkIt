@@ -14,9 +14,17 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-   <?php
-    require_once('./include/sidebar.php');
-    ?>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
+        <a class="navbar-brand ms-4" href="#">
+            <img src="logo1.png" alt="logo" width="60" height="30">
+        </a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <?php
+            require_once('./include/sidebar.php');
+            ?>
      <!-- Main Content -->
      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 70px;">
                 <div class="row justify-content-center">
