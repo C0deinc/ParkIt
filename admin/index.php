@@ -19,11 +19,6 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="logo1.png" alt="logo" width="60" height="30">
-        </a>
-    </nav>
 
     <!-- Page Content -->
     <div class="container-fluid">
@@ -33,7 +28,7 @@
             require_once('./include/sidebar.php');
             ?>
             <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 10px;">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
                 <div class="d-flex justify-content-center align-items-center pt-3 text-center">
                     <h1 class="h2 mx-auto">Overview</h1>
                 </div>
@@ -114,7 +109,7 @@
                             
                                         <!-- Right side: Image -->
                                         <div class="ml-5">
-                                            <img src="/admin/images/prof" alt="Image" class="img-fluid" width="70" height="70">
+                                            <img src="/admin/images/profit.png" alt="Image" class="img-fluid" width="70" height="70">
                                         </div>
                                     </div>
                                 </div>
