@@ -3,7 +3,6 @@
             <div class="logo" style="width: 60px; height: 30px;">
 
             </div>
-            <img src="/admin/images/logo1.png" alt="logo" width="60" height="30">
         </a>
     </nav>
 
