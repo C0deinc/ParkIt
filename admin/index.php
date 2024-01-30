@@ -41,38 +41,44 @@
                 <!-- Overview Content Goes Here -->
                 <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Users
-                                </h5>
-                                <p class="card-text text-center">100</p>
+                        <a href="tus.html" class="card-link">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Users
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">100</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Space
-                                </h5>
-                                <p class="card-text text-center">500</p>
+                        <a href="tps.html" class="card-link">
+                            <div class="card">
+                                 <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Space
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">500</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Commission
-                                </h5>
-                                <p class="card-text text-center">100</p>
+                        <a href="tcs.html" class="card-link">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Commission
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">100</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>
+                    </div>                    
                 </div>
 
                 <div class="container mt-4">
@@ -92,20 +98,53 @@
                         <div class="col-md-5">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-                                        Today's Profit
-                                    </h5>
-                                    <p class="card-text text-center">500</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Left side: Price, Time, and Additional Info -->
+                                        <div>
+                                            <h5 class="card-title">Today's Profit</h5>
+                                            <p class="card-text" style="font-size: 30px;">
+                                                &#8369;2,510 
+                                                <i class="fas fa-clock" style="font-size: 15px;"></i>
+                                                <span style="font-size: 15px;">Updated:</span> 
+                                                <span id="updatedTime">12:30 PM</span>
+                                            </p>
+                                            <p class="card-text"><span id="raisedAmount">Raised up to 89 rents</span></p>
+                                        </div>
+                                        
+                            
+                                        <!-- Right side: Image -->
+                                        <div class="ml-5">
+                                            <img src="profit.png" alt="Image" class="img-fluid" width="70" height="70">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!-- Additional content below the "Total Space" card -->
-                            <div class="card mt-3">
-                                <div class="card-body">
-                                    <h5 class="card-title ">Total Profit</h5>
-                                    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</p>
+                            
+            
+                            <div class="col-md-13 mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h5 class="card-title">Total Profit</h5>
+                                                <p class="card-text" style="font-size: 30px;">
+                                                    &#8369;12,054 
+                                                    <i class="fas fa-clock" style="font-size: 15px;"></i>
+                                                    <span style="font-size: 15px;">Updated:</span> 
+                                                    <span id="updatedTime">12:30 PM</span>
+                                                </p>
+                                            </div>
+                    
+                                            <!-- Right side: Image -->
+                                            <div class="ml-5">
+                                                <img src="wallets.png" alt="Image" class="img-fluid" width="70" height="70">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +165,7 @@
         document.addEventListener("DOMContentLoaded", function() {
             // Get the context of the canvas element
             var ctx = document.getElementById("myPieChart").getContext("2d");
-
+    
             // Data for the donut chart
             var data = {
                 labels: ["Total Spaces", "Verified Spaces", "Unverified Spaces"],
@@ -136,14 +175,14 @@
                     borderWidth: 1 // Add border width for the donut effect
                 }]
             };
-
+    
             // Configuration options
             var options = {
                 responsive: true,
                 maintainAspectRatio: false,
                 cutoutPercentage: 50 // Adjust the cutoutPercentage for the donut effect (50 for a classic donut)
             };
-
+    
             // Create the donut chart
             var myDonutChart = new Chart(ctx, {
                 type: 'doughnut', // Specify the chart type as doughnut
@@ -152,7 +191,6 @@
             });
         });
     </script>
-
-</body>
-
-</html>
+    
+    </body>
+    </html>
