@@ -65,3 +65,8 @@ body {
     font-size: small;
     color: gray;
 }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
