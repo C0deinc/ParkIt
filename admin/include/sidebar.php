@@ -13,7 +13,7 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">
-                                <img src="../image/dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
+                                <img src="/admin/image/dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
                                 Dashboard
                             </a>
                         </li>
