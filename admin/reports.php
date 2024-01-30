@@ -17,11 +17,6 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="logo1.png" alt="logo" width="60" height="30">
-        </a>
-    </nav>
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
