@@ -33,7 +33,7 @@
             require_once('./include/sidebar.php');
             ?>
             <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 10px;">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
                 <div class="d-flex justify-content-center align-items-center pt-3 text-center">
                     <h1 class="h2 mx-auto">Overview</h1>
                 </div>
