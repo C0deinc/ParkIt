@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-     <!-- Chart.js -->
-     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <!-- Chart.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -27,8 +27,8 @@
             <!-- Sidebar -->
             <?php
             require_once('./include/sidebar.php');
-            ?>
-     <!-- Main Content -->
+            ?> 
+    <!-- Main Content -->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 30px;">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -214,3 +214,4 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </body>
 </html>
+
