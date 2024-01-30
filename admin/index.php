@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
         <a class="navbar-brand ms-4" href="#">
