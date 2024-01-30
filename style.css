@@ -113,7 +113,7 @@
 
 /*PROFILE PAGE*/
 
-/*PARKING LOT SPACE*/
+/*PARKING LOT SPACE PAGE*/
 
 .ls-hourly, .ls-daily, .ls-weekly, .ls-monthly {
     border: 1px solid lightgray;
@@ -144,8 +144,17 @@
 }
 
 .dropdown .btn {
-    border: 1px solid lightgray;
+    border: 1px solid #06283D;
+    color: #06283D;
 }
 
 
-/*PARKING LOT SPACE*/
+/*PARKING LOT SPACE PAGE*/
+
+/*GETTING SPACE PAGE*/
+
+.gs-get-space {
+    display: -webkit-box;
+}
+
+/*GETTING SPACE PAGE*/
