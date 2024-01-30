@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
         <a class="navbar-brand ms-4" href="#">
-            <img src="admin/image/logo1.png" alt="logo" width="60" height="30">
+            <img src="PARKIT/admin/image/logo1.png" alt="logo" width="60" height="30">
         </a>
     </nav>
 
