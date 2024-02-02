@@ -1,0 +1,52 @@
+<header class="sticky-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="#"><img class="logo" src="../images/logo.png" alt="" srcset=""></a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+          class="sidebar offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header text-dark border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo" src="../images/logo.png" alt="" srcset=""></h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-4 flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link <?= $home_page ?>" aria-current="page" href="home.php">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link <?= $services_page ?>" href="services.php">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link <?= $rates_page ?>" href="price.php">Rates</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link <?= $about_page ?>" href="aboutUs.php">About us</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link <?= $profile_page ?>" href="profile.php">Profile</a>
+                </li>
+              </ul>
+              <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center gap-3">
+                <a href="login.php" class="text-white text-decoration-none fs-5">Login</a>
+                <a href="signup.php"
+                 class="text-white sign-button text-decoration-none px-3 py-2 rounded-4"
+                 style="background-color: #162938;"
+                >Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
