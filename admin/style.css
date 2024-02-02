@@ -61,6 +61,13 @@ body {
     margin: 8px 0;
 }
 
+.my-custom-hr {
+        height: 3px; /* Adjust the height as needed */
+        width: 96%; /* Adjust the width as needed */
+        background-color: #ccc; /* Adjust the color as needed */
+        margin: 0 auto; /* Center the <hr> element */
+}
+
 #updatedTime, #raisedAmount {
     font-size: small;
     color: gray;
@@ -69,4 +76,19 @@ body {
 .card-link {
     text-decoration: none;
     color: inherit;
+}
+
+.numbered-heading {
+    position: relative;
+}
+
+.numbered-heading::before {
+    content: "320"; /* Set the initial number */
+    position: absolute;
+    top: -10px; /* Adjust the positioning as needed */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%);
+    font-size: 33px;
+    font-weight: bold;
+    color: #06283D; /* Set the color you want */
 }
