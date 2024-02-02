@@ -253,3 +253,7 @@ body {
 #offcanvas{
     width: 160px;
 }
+
+.offcanvas-body ul li a:hover {
+    color: #ffffff;
+  }
