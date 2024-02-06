@@ -83,8 +83,6 @@
     </div>
   </div>
   <!-- Copyright -->
-  <div class="rights text-center p-3">@2023 CodeInc. ,
-    All Rights Reserved.
-  </div>
+  <div class="rights text-center p-3">© 2023 Code Inc. | All Rights Reserved.</div>
   <!-- Copyright -->
 </footer>
