@@ -12,7 +12,7 @@
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?= $dashboard_page ?>" href="index.php">
+                            <a class="nav-link <?= $index_page ?>"  aria-current="page" href="index.php">
                                 <img src="/admin/images/dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
                                 Dashboard
                             </a>
