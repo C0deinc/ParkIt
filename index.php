@@ -1,187 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAVNAV</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/mystyle.css">
+    <title>Landning Page</title>
 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header class="sticky-header">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
-            <div class="container align-items-center justify-content-evenly ">
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-              </button>
-              <div></div>
-              <a class="navbar-brand me-5 m-0" href="#"><img class="logo" src="/images/logo-removebg-preview.png" alt="" srcset=""></a>
-              <div
-              class="sidebar offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header text-dark border-bottom" data-bs-theme="dark">
-                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                  <ul class="navbar-nav justify-content-center align-items-center fs-4 flex-grow-1">
-                    <li class="nav-item">
-                      <a class="nav-link <?= $home_page ?>" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                      <a class="nav-link <?= $services_page ?>" href="#">Browse</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link <?= $rates_page ?>" href="#">How it Works</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link <?= $about_page ?>" href="#">About us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="d-flex align-items-center nav-icons">
-                <a class="me-3" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-circle space-owner-prof" viewBox="0 0 16 16">
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                </svg></a>
-              </div>
-            </div>
-          </nav>
-          <nav>
-                    <ul class="nav nav-pills align-items-center justify-content-evenly second-nav" style="background: #47B5FF; ">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0 nav2">
-                                <i class="fa-solid fa-chart-column"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0 nav2">
-                                <i class="fa-solid fa-users"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0  nav2">
-                                <i class="fa-solid fa-coins"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0 nav2">
-                                <i class="fa-solid fa-square-parking"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0 nav2">
-                                <i class="fa-solid fa-ranking-star"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-sm-0 px-lg-2 nav2">
-                                <i class="fa-solid fa-bell"></i>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
-          </nav>
-        </header>   
+    <section class="background-container p-5 d-flex flex-column justify-content-center">
+        <h2 class="fw-bolder fs-1" style="color: #06283D;">Discover your ideal space</h2>
+        <p class="fs-4 mt-1 bc-text" style="color: #06283D;">“Unlock convenience, reserve your space. Your hassle-free parking solution is just a click away.”</p>
+        <a href="#" class="btn btn-primary btn-lg btn-join mt-3">Join Us Now</a>
+    </section>
 
-        <footer class="text-center text-lg-start text-white" style=" background: #06283D;">
-          <!-- Grid container -->
-          <div class="container">
-            <!--Grid row-->
-            <div class="row my-4">
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 mb-md-0">
-        
-                <div class="d-flex align-items-center justify-content-center mx-auto px-0">
-                  <img src="/images/logo-removebg-preview.png" class="foot-logo mt-5" height="70" alt=""
-                       loading="lazy"/>
-                </div>  
-              </div>
-              <!--Grid column-->
-        
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 mb-md-0 text-center px-0">
-                <h5>ParkIt</h5>
-                <ul class="nav flex-column">
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">About Us</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Why Use Us</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Our Story</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-        
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 mb-md-0 text-center px-0">
-                <h5>Support</h5>
-                <ul class="nav flex-column">
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Contact Us</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Drivers FAQs</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Space Owner FAQs</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-        
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 mb-md-0 text-center px-0">
-                <h5>Terms</h5>
-                <ul class="nav flex-column">
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Terms and Conditions</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-white">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
+    <section class="section-one mt-5 p-5">
+        <div class="row d-flex g-0">
+            <div class="col-md-4 col-lg-6 p-5 d-flex flex-column justify-content-center ">
+                <h2>About ParkIt</h2>
+                <p class="mt-3">Parkit serves as a platform facilitating a mutually beneficial relationship between renters and space owners. Renters enjoy a user-friendly interface for finding and reserving parking spaces, while space owners can monetize their unused spaces by listing them on the platform.</p>
             </div>
-            <!--Grid row-->
-          </div>
-          <!-- Grid container -->
-          <div class="icons pb-2">
-            <div class="d-flex justify-content-center align-items-center" style="background: #47B5FF;">
-              <section>
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"
-                  role="button" data-mdb-ripple-color="dark">
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"
-                  role="button" data-mdb-ripple-color="dark">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"
-                  role="button" data-mdb-ripple-color="dark">
-                  <i class="fa-brands fa-tiktok "></i>
-                </a>
-              </section>
+            <div class="col-md-4 col-lg-6 p-0">
             </div>
-          </div>
-          <!-- Copyright -->
-          <div class="rights text-center p-3">© 2023 Code Inc. | All Rights Reserved.</div>
-          <!-- Copyright -->
-        </footer>
+        </div>
+    </section>
+
+    <section class="section-two text-center mt-5 py-5 p-5" style="background-color: #DFF6FF;">
+        <h2>Better Way to Find your Perfect Space</h2>
+        <p class="d-text mt-3">Our platform connects renters with available spots, providing a user-friendly interface for easy reservations.</p>
+        <div class="row mt-5 g-0">
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                <img src="./images/pic4.png" alt="">
+                <h3 class="mt-4">Choose your Space</h3>
+                <p>Select a space using search.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                <img src="./images/pic2.png" alt="">
+                <h3 class="mt-4">Complete process</h3>
+                <p>After you’ve selected a space, book it and the space owner will accept it.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                <img src="./images/pic3.png" alt="">
+                <h3 class="mt-4">Get your Space</h3>
+                <p>Your rent is booked and waiting for you.</p>
+            </div>
+        </div>
+    </section>
     
-    <script src="https://kit.fontawesome.com/745f99556c.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="section-three mt-5 py-5 p-5" style="background-color: #47B5FF;">
+        <div class="row d-flex justify-content-center align-items-center g-0">
+            <div class="col-sm-12 col-lg-6 p-5 d-flex flex-column justify-content-center">
+                <p style="color: #DFF6FF;">Discover the magic of finding your ideal space – a place where comfort meets convenience, and every moment feels uniquely yours. Explore a curated selection designed to cater to your specific needs and preferences. Your perfect space awaits, transforming the ordinary into the extraordinary.</p>
+            </div>
+            <div class="col-md-4 col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/pic5.png" alt="">
+                <a href="#" class="btn btn-primary btn-lg btn-find mt-4">Fing Your Space</a>
+            </div>
+        </div>
+        <div class="curve"></div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
