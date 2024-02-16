@@ -277,16 +277,14 @@ footer ul li a{
     justify-content: center;
     align-items: center;
  }
-  
- /*------------------------------FAQS------------------------------*/
+  /*------------------------------FAQS------------------------------*/
 
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@200&display=swap');
 
 /*LANDING PAGE*/
 
 .background-container {
-    background-image: url("./bg-edited.jpg");
+    background-image: url("/images/bg-edited.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

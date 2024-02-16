@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landning Page</title>
-
-    <link rel="stylesheet" href="/css/mystyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+<?php
+$title = 'Home';
+$home_page = 'active';
+require_once('./includes/head.php');
+?>
 <body>
+<?php
+require_once('./includes/owner-nav.php');
+  ?>
     <section class="background-container p-5 d-flex flex-column justify-content-center">
         <h2 class="fw-bolder fs-1" style="color: #06283D;">Discover your ideal space</h2>
         <p class="fs-4 mt-1 bc-text" style="color: #06283D;">“Unlock convenience, reserve your space. Your hassle-free parking solution is just a click away.”</p>
@@ -43,6 +43,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
                 <img src="./images/pic3.png" alt="">
                 <h3 class="mt-4">Get your Space</h3>
+                
                 <p>Your rent is booked and waiting for you.</p>
             </div>
         </div>
@@ -60,8 +61,10 @@
         </div>
         <div class="curve"></div>
     </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+    <?php
+      require_once('includes/js.php');
+      require_once('includes/footer.php');
+      ?>
 </body>
 </html>
