@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pending Account Renter</title>
 </head>
 <body>
-    <main>
-        <div>
-            <p>Hello sadasdasjhda</p>
-        </div>
-    </main>
+    
 </body>
 </html>

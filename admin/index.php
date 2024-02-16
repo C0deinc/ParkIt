@@ -1,84 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Chart.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="overflow: hidden;">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="logo1.png" alt="logo" width="60" height="30">
-        </a>
-    </nav>
-    
+<?php
+    $title = 'Dashboard';
+    $index_page = 'active';
+    require_once('./include/head.php');
+?>
+
+<body>
+
     <!-- Page Content -->
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="dashboard.html">
-                                <img src="dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="users.html">
-                                <img src="user.png" alt="users" width="20" height="20" class="mr-2">
-                                Users
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reports.html">
-                                <img src="report.png" alt="report" width="20" height="20" class="mr-2">
-                                Reports
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="staff.html">
-                                <img src="staff.png" alt="staff" width="20" height="20" class="mr-2">
-                                Staff
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="setting.html">
-                                <img src="setting.png" alt="setting" width="20" height="20" class="mr-2">
-                                Setting
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="wallet.html">
-                                <img src="wallet.png" alt="wallet" width="20" height="20" class="mr-2">
-                                Wallet
-                            </a>
-                        </li>
-                        <div class="dropdown-divider"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                <img src="logout.png" alt="logout" width="20" height="20" class="mr-2">
-                                Log Out
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-             <!-- Main Content -->
-             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 40px;">
+            <?php
+            require_once('./include/sidebar.php');
+            ?>
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
                 <div class="d-flex justify-content-center align-items-center pt-3 text-center">
                     <h1 class="h2 mx-auto">Overview</h1>
                 </div>
@@ -86,38 +25,44 @@
                 <!-- Overview Content Goes Here -->
                 <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Users
-                                </h5>
-                                <p class="card-text text-center">100</p>
+                        <a href="tus.html" class="card-link">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="/admin/images/user.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Users
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">100</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Space
-                                </h5>
-                                <p class="card-text text-center">500</p>
+                        <a href="tps.html" class="card-link">
+                            <div class="card">
+                                 <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="/admin/images/space.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Space
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">500</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
-                                    Total Commission
-                                </h5>
-                                <p class="card-text text-center">100</p>
+                        <a href="tcs.html" class="card-link">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        <img src="/admin/images/commission.png" alt="Image" class="img-fluid mr-2" width="30" height="30">
+                                        Total Commission
+                                    </h5>
+                                    <p class="card-text text-center" style="font-size: 25px">100</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>
+                    </div>                    
                 </div>
 
                 <div class="container mt-4">
@@ -153,7 +98,7 @@
                             
                                         <!-- Right side: Image -->
                                         <div class="ml-5">
-                                            <img src="profit.png" alt="Image" class="img-fluid" width="70" height="70">
+                                            <img src="/admin/images/profit.png" alt="Image" class="img-fluid" width="70" height="70">
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +121,7 @@
                     
                                             <!-- Right side: Image -->
                                             <div class="ml-5">
-                                                <img src="wallets.png" alt="Image" class="img-fluid" width="70" height="70">
+                                                <img src="/admin/images/wallet.png" alt="Image" class="img-fluid" width="70" height="70">
                                             </div>
                                         </div>
                                     </div>
