@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -222,3 +222,31 @@ body {
 }
 /* Table */
 
+
+/* Style the stars */
+.checked {
+    color: gold; /* Change the color of checked stars */
+    font-size: 20px; /* Adjust the size of the stars */
+}
+
+.fa-star {
+    color: gold; 
+    font-size: 20px; /* Adjust the size of the unchecked stars */
+}
+
+.reviews {
+    color: blue; /* Change the color of the reviews text */
+    font-size: 16px; /* Adjust the size of the reviews text */
+}
+
+.location {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+}
+
+  
