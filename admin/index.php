@@ -25,7 +25,7 @@
                 <!-- Overview Content Goes Here -->
                 <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <a href="tus.html" class="card-link">
+                        <a href="tus.php" class="card-link">
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">
@@ -38,7 +38,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="tps.html" class="card-link">
+                        <a href="tps.php" class="card-link">
                             <div class="card">
                                  <div class="card-body">
                                     <h5 class="card-title text-center">
@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="tcs.html" class="card-link">
+                        <a href="tcs.php" class="card-link">
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">
@@ -121,7 +121,7 @@
                     
                                             <!-- Right side: Image -->
                                             <div class="ml-5">
-                                                <img src="/admin/images/wallet.png" alt="Image" class="img-fluid" width="70" height="70">
+                                                <img src="/admin/images/wallets.png" alt="Image" class="img-fluid" width="70" height="70">
                                             </div>
                                         </div>
                                     </div>
@@ -136,6 +136,10 @@
             </main>
         </div>
     </div>
+
+    <?php
+        require_once('./include/js.php')
+    ?>
 
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
