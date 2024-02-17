@@ -1,8 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+$title = 'Privacy Policy';
+$home_page = 'active';
+require_once('./includes/head.php');
+?>
 <body>
+<?php
+require_once('./includes/renter-nav.php');
+  ?>
   <div class="breadcrumb">
     <div class="container">
       <div class="row">
@@ -14,7 +21,7 @@
       </div>
     </div>
   </div>
-  <h1 class="text-center" style="color:#3586ff;">PRIVACY POLICY</h1>
+  <h1 class="text-center page-top" style="color:#3586ff;">PRIVACY POLICY</h1>
   <hr class="hr">
 
 <main>
@@ -66,6 +73,9 @@
       <h4 class="text-center pb-5">By participating in our Promotions, you agree to the terms of this Privacy Policy. We recommend reviewing this policy periodically to stay informed about our practices regarding Promotions.</h4>
   </div>
 </main>
-
+<?php
+      require_once('includes/js.php');
+      require_once('includes/footer.php');
+      ?>
 </body>
 </html>

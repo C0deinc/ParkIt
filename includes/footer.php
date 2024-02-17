@@ -18,13 +18,10 @@
         <h5>ParkIt</h5>
         <ul class="nav flex-column">
           <li class="mb-2">
-            <a href="#!" class="text-white">About Us</a>
+            <a href="whyuseus.php" class="text-white">Why Use Us</a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white">Why Use Us</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!" class="text-white">Our Story</a>
+            <a href="ourstory.php" class="text-white">Our Story</a>
           </li>
         </ul>
       </div>
@@ -35,13 +32,13 @@
         <h5>Support</h5>
         <ul class="nav flex-column">
           <li class="mb-2">
-            <a href="#!" class="text-white">Contact Us</a>
+            <a href="contactus.php" class="text-white">Contact Us</a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white">Drivers FAQs</a>
+            <a href="driversFAQs.php" class="text-white">Drivers FAQs</a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white">Space Owner FAQs</a>
+            <a href="spaceownerFAQs.php" class="text-white">Space Owner FAQs</a>
           </li>
         </ul>
       </div>
@@ -52,10 +49,10 @@
         <h5>Terms</h5>
         <ul class="nav flex-column">
           <li class="mb-2">
-            <a href="#!" class="text-white">Terms and Conditions</a>
+            <a href="terms.php" class="text-white">Terms and Conditions</a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white">Privacy Policy</a>
+            <a href="privacy.php" class="text-white">Privacy Policy</a>
           </li>
         </ul>
       </div>

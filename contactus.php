@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+$title = 'Contact Us';
+$home_page = 'active';
+require_once('./includes/head.php');
+?>
+<body>
+<?php
+require_once('./includes/renter-nav.php');
+  ?>
 <div class="breadcrumb">
     <div class="container">
       <div class="row">
@@ -11,10 +20,10 @@
       </div>
     </div>
   </div>
-  <h1 class="text-center" style="color:#3586ff;">CONTACT US</h1>
+  <h1 class="text-center page-top" style="color:#3586ff;">CONTACT US</h1>
   <hr class="hr">
 
-  <h3 class="wp-block-heading pt-5">&nbsp;</h3>
+  <h3 class="wp-block-heading">&nbsp;</h3>
   <form class="container">
       <div class="row">
           <div class="col-md-6 rounded-3 p-5">
@@ -36,7 +45,13 @@
                   </div>
           </div>
           <div class="col-md-6">
-              <img src="./images/operator.png" class="card-img-bottom card-i p-3 w-75" alt="...">
+              <img src="./images/contactUs.gif" class="card-img-bottom card-i p-3 w-75" alt="...">
           </div>
       </div>
     </form>
+    <?php
+      require_once('includes/js.php');
+      require_once('includes/footer.php');
+      ?>
+</body>
+</html>

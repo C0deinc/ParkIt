@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<?php
+$title = 'Why Use Us?';
+$home_page = 'active';
+require_once('./includes/head.php');
+?>
 <body>
-    
+<?php
+require_once('./includes/renter-nav.php');
+  ?>
     <div class="breadcrumb">
         <div class="container">
           <div class="row">
@@ -18,7 +20,7 @@
           </div>
         </div>
       </div>
-      <h1 class="text-center" style="color:#3586ff;">WHY USE US</h1>
+      <h1 class="text-center page-top" style="color:#3586ff;">WHY USE US</h1>
       <hr class="hr">
   
   <main>
@@ -39,6 +41,9 @@
           <p>With ParkIt Rentals, parking has never been easier. Say goodbye to circling the block endlessly in search of a spot and hello to stress-free parking experiences.</p>
       </div>
   </main>
-  
+  <?php
+      require_once('includes/js.php');
+      require_once('includes/footer.php');
+      ?>
 </body>
 </html>

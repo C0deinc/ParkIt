@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Owner FAQs</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/mystyle.css">
-</head>
+<?php
+$title = 'Space Owner FAQs';
+$home_page = 'active';
+require_once('./includes/head.php');
+?>
 <body class="bg-primary faq-body">
+<?php
+require_once('./includes/renter-nav.php');
+  ?>
     <div class="wrapper bg-white rounded shadow">
-        <div class="h2 text-center fw-bold">Space Owner FAQs</div>
+        <div class="h2 text-center fw-bold page-top">Space Owner FAQs</div>
         <div class="h3 text-primary text-center pb-3">How can we help you?</div>
         <div class="accordion accordion-flush border-top border-start border-end" id="myAccordion">
             <div class="accordion-item">
@@ -45,7 +45,8 @@
             </div>  
         </div>
     </div>   
-    <script src="https://kit.fontawesome.com/745f99556c.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <?php
+      require_once('includes/js.php');  
+      ?>
 </body>
 </html>

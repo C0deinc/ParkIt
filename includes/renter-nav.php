@@ -43,16 +43,16 @@
                 <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
                   <ul class="navbar-nav justify-content-center align-items-center fs-4 flex-grow-1">
                     <li class="nav-item">
-                      <a class="nav-link <?= $home_page ?>" aria-current="page" href="#">Home</a>
+                      <a class="nav-link <?= $home_page ?>" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                      <a class="nav-link <?= $services_page ?>" href="#">Browse</a>
+                      <a class="nav-link <?= $browse_page ?>" href="#">Browse</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link <?= $rates_page ?>" href="#">How it Works</a>
+                        <a class="nav-link <?= $hiw_page ?>" href="#">How it Works</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link <?= $about_page ?>" href="#">About us</a>
+                        <a class="nav-link <?= $about_page ?>" href="./aboutus.php">About us</a>
                     </li>
                   </ul>
                 </div>

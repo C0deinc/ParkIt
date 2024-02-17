@@ -6,11 +6,9 @@
     require_once('./includes/head.php');
 ?>
 <body>
-
-    <?php
-    require_once('./include/header.user.php');
-    ?>
-
+<?php
+require_once('./includes/renter-nav.php');
+  ?>
     <div class="breadcrumb">
         <div class="container">
           <div class="row">
@@ -22,7 +20,7 @@
           </div>
         </div>
       </div>
-      <h1 class="text-center" style="color:#3586ff;">ABOUT US</h1>
+      <h1 class="text-center page-top" style="color:#3586ff;">ABOUT US</h1>
       <hr class="hr">
   
       <div class="container">
@@ -49,6 +47,9 @@
            </div>
       </div>
   </div>
-
+  <?php
+      require_once('includes/js.php');
+      require_once('includes/footer.php');
+      ?>
 </body>
 </html>
