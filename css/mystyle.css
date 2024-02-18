@@ -441,4 +441,16 @@ footer ul li a{
 .page-top{
     margin-top: 100px;
 }
+@media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 20px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 414px) {
+    .responsive-font-example {
+      font-size: 15px;
+    }
+  }
 /*OTHER PAGES*/
+

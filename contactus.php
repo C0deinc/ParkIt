@@ -44,7 +44,7 @@ require_once('./includes/renter-nav.php');
                       <button type="submit" class="btn btn-primary rounded-5 fw-semibold" style="padding: 10px 50px 10px 50px;">Submit</button>  
                   </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex justify-content-center align-content-center">
               <img src="./images/contactUs.gif" class="card-img-bottom card-i p-3 w-75" alt="...">
           </div>
       </div>

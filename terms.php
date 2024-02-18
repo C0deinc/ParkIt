@@ -20,11 +20,11 @@ require_once('./includes/renter-nav.php');
           </div>
         </div>
       </div>
-      <h1 class="text-center page-top" style="color:#3586ff;">Terms of Service</h1>
+      <h1 class="text-center page-top" style="color:#3586ff;">Terms and Conditions</h1>
       <hr class="hr">
   
   <main>
-      <div class="container">
+      <div class="container pb-5">
           <h3 class="wp-block-heading fs-4">&nbsp;</h3>
           <h4>Welcome to ParkIt!</h4>
           <p>These Terms of Service ("Terms") govern your use of the parking space rental services provided by Code Incorporation. By using our platform, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use our services.</p>
