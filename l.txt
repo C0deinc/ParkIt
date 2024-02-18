@@ -1,0 +1,162 @@
+<div class="card" style="width: 8rem;">
+                                <p>C1</p>
+                                <div class="card-body" style="border-top: 1px solid lightgray;">
+                                    <p class="card-text">Some</p>
+                                </div>
+                            </div>
+
+
+<div class="row g-0 mt-5">
+                <div class="col-sm-6 col-lg-3">
+
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    
+                </div>
+            </div>   
+
+
+<div class="row g-0 mt-5">
+                        <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                            <div class="card mb-4 text-center" style="width: 9rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalC1">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div class="py-3" style="border-top: 1px solid lightgray;">
+                                    <p>Occupied</p>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modalC1" tabindex="-1" aria-labelledby="modalC1Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalC1Label">C1 Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <p class="fw-bold">Pick your vehicle</p>
+                                                <p class="fw-bold" style="color: #47B5FF;">Not your vehicle?</p>
+                                            </div>
+                                            <div class="row d-flex justify-content-evenly">
+                                                <div class="col-lg-2 rounded d-flex justify-content-center align-items-center" style="border: 1px solid #06283D; width: 5rem; height: 4rem;">
+                                                    <img style="width: 3rem;" src="./images/motorbike.png" alt="">
+                                                </div>
+                                                <div class="col-lg-2 rounded d-flex justify-content-center align-items-center" style="border: 1px solid #06283D; width: 5rem; height: 4rem;">
+                                                    <img style="width: 3rem;" src="./images/motorbike.png" alt="">
+                                                </div>
+                                                <div class="col-lg-2 rounded d-flex justify-content-center align-items-center" style="border: 1px solid #06283D; width: 5rem; height: 4rem;">
+                                                    <img style="width: 3rem;" src="./images/motorbike.png" alt="">
+                                                </div>
+                                                <div class="col-lg-2 rounded d-flex justify-content-center align-items-center" style="border: 1px solid #06283D; width: 5rem; height: 4rem;">
+                                                    <img style="width: 3rem;" src="./images/motorbike.png" alt="">
+                                                </div>
+                                                <div class="col-lg-2 rounded d-flex justify-content-center align-items-center" style="border: 1px solid #06283D; width: 5rem; height: 4rem;">
+                                                    <img style="width: 3rem;" src="./images/motorbike.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 text-center" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div style="border-top: 1px solid lightgray;">
+                                    <p class="mt-3">Occupied</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                            <div class="card mb-4 text-center" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div class="py-3" style="border-top: 1px solid lightgray;">
+                                    <p>Occupied</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4 text-center" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div style="border-top: 1px solid lightgray;">
+                                    <p class="mt-3">Occupied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 mt-2 text-center">
+                        <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                            <div class="card mb-4" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div class="py-3" style="border-top: 1px solid lightgray;">
+                                    <p>Occupied</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div style="border-top: 1px solid lightgray;">
+                                    <p class="mt-3">Occupied</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                            <div class="card mb-4" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div class="py-3" style="border-top: 1px solid lightgray;">
+                                    <p>Occupied</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="width: 9rem;">
+                                <div class="py-3">
+                                    <p class="fw-bold">C1</p>
+                                </div>
+                                <div style="border-top: 1px solid lightgray;">
+                                    <p class="mt-3">Occupied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function toggleMotorcycleSection() {
+                    var motorcycleSection = document.getElementById("motorcycleSection");
+                    var isVisible = motorcycleSection.style.display === 'block' || motorcycleSection.style.display === '';
+
+                    if (isVisible) {
+                        motorcycleSection.style.display = 'none';
+                        localStorage.setItem('motorcycleSectionVisible', 'false');
+                    } else {
+                        motorcycleSection.style.display = 'block';
+                        localStorage.setItem('motorcycleSectionVisible', 'true');
+                    }
+                }
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    var motorcycleSection = document.getElementById("motorcycleSection");
+                    var isMotorcycleSectionVisible = localStorage.getItem('motorcycleSectionVisible');
+
+                    if (isMotorcycleSectionVisible === 'true') {
+                        motorcycleSection.style.display = 'block';
+                    }
+                });
+            </script>
