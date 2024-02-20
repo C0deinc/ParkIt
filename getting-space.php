@@ -125,6 +125,7 @@
                                     </div>
                                 </div>
                             </div>
+<<<<<<< HEAD
                             <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -142,6 +143,8 @@
                                     </div>
                                 </div>
                             </div>
+=======
+>>>>>>> b9a1892f4f9436cb8a20ac42119eb9a57f120122
                             <div class="card mb-4 text-center" style="width: 9rem;">
                                 <div class="py-3">
                                     <p class="fw-bold">C1</p>
@@ -232,6 +235,7 @@
                     if (isMotorcycleSectionVisible === 'true') {
                         motorcycleSection.style.display = 'block';
                     }
+<<<<<<< HEAD
 
                     $('#modalC1').on('hidden.bs.modal', function () {
                         // Open the new modal using jQuery when the current modal is hidden
@@ -243,6 +247,52 @@
     </section>
     
     
+=======
+                });
+            </script>
+    </section>
+    <section class="gs-section-three px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">A1 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For tricycles</span></p>
+        </div>
+    </section>
+    <section class="gs-section-four px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">B <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For cars</span></p>
+        </div>
+    </section>
+    <section class="gs-section-five px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">B1 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For van or jeepney</span></p>
+        </div>
+    </section>
+    <section class="gs-section-six px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">B2 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light commercial vehicle</span></p>
+        </div>
+    </section>
+    <section class="gs-section-seven px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">C <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy commercial vehicle</span></p>
+        </div>
+    </section>
+    <section class="gs-section-eight px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">D <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For buses</span></p>
+        </div>
+    </section>
+    <section class="gs-section-nine px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">BE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light articulated vehicle</span></p>
+        </div>
+    </section>
+    <section class="gs-section-nine px-5 pb-3" style="color: #06283D;">
+        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
+            <p class="m-0 fw-bold fs-3">CE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy articulated vehicle</span></p>
+        </div>
+    </section>
+    
+>>>>>>> b9a1892f4f9436cb8a20ac42119eb9a57f120122
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a3bf0b829f.js"></script>
