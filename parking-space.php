@@ -26,11 +26,11 @@
             </div>
             <div class="space-owner-info col-sm-12 col-lg-6 d-flex flex-row pt-5">
                 <div class="space-owner-name me-5">
-                    <p style="color: gray">Space Owner</p>
+                    <p class="mb-1" style="color: gray">Space Owner</p>
                     <p class="fw-bold fs-5" style="color: #06283D;">Makiling</p>
                 </div>
                 <div class="space-owner-contact">
-                    <p style="color: gray">Contact Number</p>
+                    <p class="mb-1" style="color: gray">Contact Number</p>
                     <p class="fw-bold fs-5" style="color: #06283D;">09123456789</p>
                 </div>
             </div>
