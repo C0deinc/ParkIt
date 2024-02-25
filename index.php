@@ -7,7 +7,7 @@ require_once('./includes/head.php');
 ?>
 <body>
 <?php
-require_once('./includes/renter-nav.php');
+require_once('./includes/owner-nav.php');
   ?>
     <section class="background-container p-5 d-flex flex-column justify-content-center">
         <h2 class="fw-bolder fs-1" style="color: #06283D;">Discover your ideal space</h2>

@@ -5,7 +5,7 @@
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
+              <i class="fa-solid fa-bars fs-5"></i>
               </button>
               <div></div>
               <a class="navbar-brand me-5 m-0" href="#"><img class="logo" src="/images/logo-removebg-preview.png" alt="" srcset=""></a>
@@ -46,22 +46,22 @@
             <ul class="nav nav-pills align-items-center justify-content-evenly second-nav" style="background: #47B5FF; ">
                 <li class="nav-item">
                     <a href="#" class="nav-link px-sm-0 nav2">
-                        <i class="fa-solid fa-chart-column"></i>
+                        <i class="bi bi-grid-fill fs-5"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link px-sm-0 nav2">
-                        <i class="fa-solid fa-users"></i>
+                    <i class="bi bi-people-fill fs-5"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link px-sm-0  nav2">
-                        <i class="fa-solid fa-coins"></i>
+                        <i class="bi bi-cash-coin fs-5"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link px-sm-0 nav2">
-                        <i class="fa-solid fa-square-parking"></i>
+                        <i class="bi bi-p-square-fill fs-5"></i>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -71,7 +71,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link px-sm-0 px-lg-2 nav2">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell fs-5"></i>
                     </a>
                 </li>
             </ul>
