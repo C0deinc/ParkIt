@@ -61,6 +61,7 @@ require_once('./includes/owner-nav.php');
         </div>
         <div class="curve"></div>
     </section>
+    
       
     <?php
       require_once('includes/js.php');
