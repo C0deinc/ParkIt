@@ -125,17 +125,90 @@
                                     </div>
                                 </div>
                             </div>
-<<<<<<< HEAD
                             <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="newModalLabel">New Modal Details</h5>
+                                            <h5 class="modal-title" id="newModalLabel">C1 Details</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <!-- Add your content for the new modal here -->
-                                            <p>This is the content of the new modal.</p>
+                                            <div>
+                                                <div class="row g-0" style="border-bottom: 1px solid lightgray;">
+                                                    <div class="col-sm-12 col-lg-6 p-4 d-flex flex-row align-items-center justify-content-evenly">
+                                                        <div>
+                                                            <i class="fa-solid fa-motorcycle fa-2xl"></i>
+                                                            <p>Owned</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Vehicle</p>
+                                                            <p>Motorcycle</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg-6 p-4 d-flex flex-row align-items-center justify-content-evenly">
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Vehicle Description</p>
+                                                            <p class="m-0">Model: <span></span></p>
+                                                            <p class="m-0">Engine: <span></span></p>
+                                                            <p class="m-0">Transmission: <span></span></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Plate Number</p>
+                                                            <p>JEFF 123</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row d-flex flex-column p-3">
+                                                    <div class="col-sm-12 col-lg-6">
+                                                        <p>Driver</p>
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg-6 d-flex justify-content-evenly">
+                                                        <div class="p-2">
+                                                            <input type="radio" class="me-2"><label for="">I'm the driver</label>
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <input type="radio" class="me-2"><label for="">I'm not the driver</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row d-flex flex-column p-3">
+                                                    <div class="col-sm-12 col-lg-6">
+                                                        <p>Pick your rate</p>
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg-6 d-flex justify-content-evenly">
+                                                        <div class="p-2">
+                                                            <input type="radio" class="me-2"><label for="">₱ 100.00 Hourly</label>
+                                                            <p class="m-0 ms-3" style="font-size: 0.6rem; color: darkgray;">30 minutes allowance for arriving</p>
+                                                            <p class="m-0 ms-3" style="font-size: 0.6rem; color: darkgray;">With a base rate of ₱50.00</p>
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <input type="radio" class="me-2"><label for="">₱ 100.00 Hourly</label>
+                                                            <p class="m-0 ms-3" style="font-size: 0.6rem; color: darkgray;">30 minutes allowance for arriving</p>
+                                                            <p class="m-0 ms-3" style="font-size: 0.6rem; color: darkgray;">With a base rate of ₱50.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row p-3">
+                                                    <div class="col-sm-12 col-lg-6">
+                                                        <p>Choose payment method</p>
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg-6 d-flex flex-row">
+                                                        <div class="p-2">
+                                                            <img class="rounded" src="./images/pic6.jpg" alt="" style="width: 5rem; height: 3rem;">
+                                                        </div>
+                                                        <div class="">
+                                                            <i class="fa-solid fa-money-bill"></i>
+                                                            <p>Cash</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #1363DF; color: #DFF6FF">Next <i class="fa-solid fa-arrow-right ms-1"></i></button>
@@ -143,8 +216,6 @@
                                     </div>
                                 </div>
                             </div>
-=======
->>>>>>> b9a1892f4f9436cb8a20ac42119eb9a57f120122
                             <div class="card mb-4 text-center" style="width: 9rem;">
                                 <div class="py-3">
                                     <p class="fw-bold">C1</p>
@@ -235,7 +306,6 @@
                     if (isMotorcycleSectionVisible === 'true') {
                         motorcycleSection.style.display = 'block';
                     }
-<<<<<<< HEAD
 
                     $('#modalC1').on('hidden.bs.modal', function () {
                         // Open the new modal using jQuery when the current modal is hidden
@@ -245,54 +315,6 @@
             </script>
 
     </section>
-    
-    
-=======
-                });
-            </script>
-    </section>
-    <section class="gs-section-three px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">A1 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For tricycles</span></p>
-        </div>
-    </section>
-    <section class="gs-section-four px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">B <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For cars</span></p>
-        </div>
-    </section>
-    <section class="gs-section-five px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">B1 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For van or jeepney</span></p>
-        </div>
-    </section>
-    <section class="gs-section-six px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">B2 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light commercial vehicle</span></p>
-        </div>
-    </section>
-    <section class="gs-section-seven px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">C <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy commercial vehicle</span></p>
-        </div>
-    </section>
-    <section class="gs-section-eight px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">D <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For buses</span></p>
-        </div>
-    </section>
-    <section class="gs-section-nine px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">BE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light articulated vehicle</span></p>
-        </div>
-    </section>
-    <section class="gs-section-nine px-5 pb-3" style="color: #06283D;">
-        <div class="ls-motorcycles px-3 py-1" style="color: #06283D;">
-            <p class="m-0 fw-bold fs-3">CE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy articulated vehicle</span></p>
-        </div>
-    </section>
-    
->>>>>>> b9a1892f4f9436cb8a20ac42119eb9a57f120122
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a3bf0b829f.js"></script>
