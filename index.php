@@ -7,7 +7,7 @@ require_once('./includes/head.php');
 ?>
 <body>
 <?php
-require_once('./includes/owner-nav.php');
+require_once('./includes/renter-nav.php');
   ?>
     <section class="background-container p-5 d-flex flex-column justify-content-center">
         <h2 class="fw-bolder fs-1" style="color: #06283D;">Discover your ideal space</h2>
@@ -56,7 +56,7 @@ require_once('./includes/owner-nav.php');
             </div>
             <div class="col-md-4 col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center">
                 <img src="./images/pic5.png" alt="">
-                <a href="#" class="btn btn-primary btn-lg btn-find mt-4">Fing Your Space</a>
+                <a href="#" class="btn btn-primary btn-lg btn-find mt-4">Find Your Space</a>
             </div>
         </div>
         <div class="curve"></div>

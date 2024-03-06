@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-
-    <link rel="stylesheet" href="./css/mystyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
+<?php
+$title = 'Profile';
+$home_page = '';
+require_once('./includes/head.php');
+?>
 <body>
-    <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
-        <div>
-            <i class="bi bi-arrow-left fs-4 text-white py-5"></i>
-            <span class="text-white px-5 py-5" style="padding-bottom: 100px;">Profile</span>
+        <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
+            <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
+                <i><a href="/index.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
+                <li class="text-white fs-5" style="padding-left: 50px;"><h4>Profile</h4></li>>
+            </ul>
         </div>
-    </div>
     <div class="profile-section-one">
         <div class="row g-0 p-5 d-flex flex-column">
             <div class="col-md-12 col-lg-6 mt-5">
@@ -48,46 +44,42 @@
         <div class="p-lists-container">
             <div class="p-view-profile px-5 py-4">
                 <i class="fa-solid fa-user fa-lg me-4" style="color: #06283D;"></i>
-                <p>View profile</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">View profile</a>
             </div>
             <div class="p-my-reviews px-5 py-4">
                 <i class="fa-solid fa-star fa-lg me-4" style="color: #06283D;"></i>
-                <p>My reviews</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">My reviews</a>
             </div>
             <div class="p-my-vehicle px-5 py-4">
                 <i class="fa-solid fa-car fa-lg me-4" style="color: #06283D;"></i>
-                <p>My vehicle</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">My vehicle</a>
             </div>
             <div class="p-my-rentals px-5 py-4">
                 <i class="fa-solid fa-key fa-lg me-4" style="color: #06283D;"></i>
-                <p>My rentals</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">My rentals</a>
             </div>
             <div class="p-history px-5 py-4">
                 <i class="fa-solid fa-book fa-lg me-4" style="color: #06283D;"></i>
-                <p>History</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">History</a>
             </div>
             <div class="p-help-center px-5 py-4">
                 <i class="fa-solid fa-circle-info fa-lg me-4" style="color: #06283D;"></i>
-                <p>Help center</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">Help center</a>
             </div>
             <div class="p-settings px-5 py-4">
-                <p>Settings</p>
-            </div>
-            <div class="p-terms-condition-privacy px-5 py-4">
-                <p>Terms & Conditions / Privacy</p>
+                <a href="" class="text-decoration-none" style="color: #06283D;">Settings</a>
             </div>
             <div class="p-switch-to-space-owner px-5 py-4 d-flex flex-row justify-content-between align-items-center">
                 <p>Switch to <span style="color: #06283D" class="fw-bold">Space Owner</span></p>
-                <i class="fa-solid fa-repeat fa-lg me-4 mb-3" style="color: #06283D;"></i>
+                <i><a href="" class="fa-solid fa-repeat fa-lg me-4 mb-3 text-decoration-none" style="color: #06283D;"></a></i>
             </div>
             <div class="p-logout px-5 py-4">
-                <p>Log out</p>
+               <a href="" class="text-decoration-none" style="color: #06283D;">Log Out</a>
             </div>
         </div>
     </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a3bf0b829f.js"></script>
+    <?php
+      require_once('includes/js.php');
+      ?>
 </body>
 </html>
