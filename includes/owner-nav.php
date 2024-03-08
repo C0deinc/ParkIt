@@ -10,7 +10,7 @@
               <div></div>
               <a class="navbar-brand me-5 m-0" href="#"><img class="logo" src="/images/logo-removebg-preview.png" alt="" srcset=""></a>
               <div
-              class="sidebar offcanvas offcanvas-end"
+              class="sidebar offcanvas offcanvas-start"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">

@@ -20,11 +20,11 @@ require_once('./includes/renter-nav.php');
           </div>
         </div>
       </div>
-      <h1 class="text-center page-top" style="color:#3586ff;">WHY USE US</h1>
+      <h1 class="text-center page-top m-0" style="color:#3586ff;">WHY USE US</h1>
       <hr class="hr">
   
   <main>
-      <div class="container pb-5">
+      <div class="container pb-5 mb-5">
           <h3 class="wp-block-heading fs-4">&nbsp;</h3>
           <h4>Parking Made Simple</h4>
           <p>At ParkIt Rentals, we understand that finding parking can be stressful. That's why we're here to make it simple for you.</p>

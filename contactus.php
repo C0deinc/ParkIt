@@ -20,12 +20,15 @@ require_once('./includes/renter-nav.php');
       </div>
     </div>
   </div>
-  <h1 class="text-center page-top" style="color:#3586ff;">CONTACT US</h1>
+  <h1 class="text-center page-top m-0" style="color:#3586ff;">CONTACT US</h1>
   <hr class="hr">
 
-  <h3 class="wp-block-heading">&nbsp;</h3>
+  <h3 class="wp-block-heading m-0">&nbsp;</h3>
   <form class="container">
       <div class="row">
+      <div class="col-md-6 d-flex justify-content-center align-content-center">
+              <img src="./images/contactUs.gif" class="card-img-bottom card-i p-3 w-75" alt="...">
+          </div>
           <div class="col-md-6 rounded-3 p-5">
               <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label fs-4">Email</label>
@@ -44,9 +47,7 @@ require_once('./includes/renter-nav.php');
                       <button type="submit" class="btn btn-primary rounded-5 fw-semibold" style="padding: 10px 50px 10px 50px;">Submit</button>  
                   </div>
           </div>
-          <div class="col-md-6 d-flex justify-content-center align-content-center">
-              <img src="./images/contactUs.gif" class="card-img-bottom card-i p-3 w-75" alt="...">
-          </div>
+          
       </div>
     </form>
     <?php

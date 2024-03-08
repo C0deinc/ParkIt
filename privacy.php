@@ -21,7 +21,7 @@ require_once('./includes/renter-nav.php');
       </div>
     </div>
   </div>
-  <h1 class="text-center page-top" style="color:#3586ff;">PRIVACY POLICY</h1>
+  <h1 class="text-center page-top m-0" style="color:#3586ff;">PRIVACY POLICY</h1>
   <hr class="hr">
 
 <main>

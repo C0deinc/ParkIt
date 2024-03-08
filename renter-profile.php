@@ -12,20 +12,37 @@ require_once('./includes/head.php');
                 <li class="text-white fs-5" style="padding-left: 50px;"><h4>Profile</h4></li>>
             </ul>
         </div>
-    <div class="profile-section-one">
-        <div class="row g-0 p-5 d-flex flex-column">
-            <div class="col-md-12 col-lg-6 mt-5">
-                <div class="profile-picture rounded-circle p-1 mt-5">
-                    <img src="" alt="" class="img-fluid">
-                </div>
+
+    <section class="profile-section-one">
+    <div class="container py-5 d-flex justify-content-center align-items-center">
+            <div class="profile-picture rounded-circle">
+                    <img src="" alt="" class="img-responsive">
             </div>
-            <div class="col-md-12 col-lg-6 mt-5">
-                <div class="profile-email">
-                    <p class="fs-5" style="color: #DFF6FF;">haroletrom@gmail.com</p>
-                </div>
+            <div class="container pt-5" style="padding-left: 50px;" >
+                    <div class="">
+                    <i class="fa-solid fa-address-card me-4 text-white"></i>
+                    <a href="" class="text-decoration-none text-white profile-details">Harolhette O. Rom</a>
+                    </div>
+                    <div class="pt-3">
+                    <i class="fa-solid fa-envelope me-4 text-white"></i>
+                    <a href="" class="text-decoration-none text-white profile-details">haroletrom@gmail.com</a>
+                    </div>
+                    <div class="pt-3">
+                    <i class="fa-solid fa fa-venus-mars me-4 text-white"></i>
+                    <a href="" class="text-decoration-none text-white profile-details">Male</a>
+                    </div>
+                    <div class="pt-3">
+                    <i class="fa-solid fa fa-mobile me-4 text-white"></i>
+                    <a href="" class="text-decoration-none text-white profile-details">09557651889</a>
+                    </div>
+                    <div class="pt-3">
+                    <i class="fa-solid fa fa-location-dot me-4 text-white"></i>
+                    <a href="" class="text-decoration-none text-white profile-details">Zamboanga del sur, Zamoanga City,Upper Calarian, Southcom Village</a>
+                    </div>
             </div>
-        </div>
     </div>
+    </section>
+
 
     <section class="profile-section-two">
         <div class="parkit-wallet-container px-5 py-4">

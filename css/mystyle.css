@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");    
+
 *{
     list-style: none;
     margin: 0;
@@ -42,12 +43,12 @@ body{
     font-size: larger;
 }
 
-.offcanvas{
-    --bs-offcanvas-width: 800px;
-}
 .offcanvas-body ul li a:hover {
     color: #ffffff;
   }
+.modal-backdrop {
+    display: none !important;
+}
 
 /*------------------------------NAVBAR-------------------------------*/
 
@@ -74,17 +75,15 @@ footer ul li a{
         font-size: x-large;
     }
 }
-.row{
-    margin: 0;
-}
-
-.sticky-header{
-   z-index: 1;
-}
 
 .fa-brands{
     font-size: larger;
 }
+
+.offcanvas-body{
+    z-index: 5000;
+}
+
 @media(max-width: 414px),(max-width: 768px){
     .offcanvas-body ul li a{
         font-size: medium;
@@ -137,6 +136,54 @@ footer ul li a{
         margin-right: 15px;
     }
 }
+
+@media(min-width: 414px) {
+    .space-owner-info {
+        justify-content: center;
+    }
+}
+@media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .responsive-font-example {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .custom-text {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .custom-text {
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .custom-text {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .custom-font-size {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    .custom-font-size {
+      font-size: 1.1rem;
+    }
+  }
+  @media (min-width: 769px) {
+    .custom-font-size {
+      font-size: 1.2rem;
+    }
+  }
 /*------------------------------MEDIA QUERY-------------------------------*/
 
 /*------------------------------ADMIN-LOGIN-------------------------------*/
@@ -295,7 +342,6 @@ footer ul li a{
 .bc-text {
     margin-right: 20rem;
 }
-
 .btn-join {
     width: fit-content;
 }
@@ -333,24 +379,18 @@ footer ul li a{
     border-bottom: 1px solid lightgray;
 }
 
-@media(min-width: 414px) {
-    .space-owner-info {
-        justify-content: center;
-    }
-}
 
 /*BROWSE PAGE*/
 
 /*PROFILE PAGE*/
 
-.profile-section-one {
-    width: 100%;
-    height: 50vh;
+.profile-section-one{
     background-color: #47B5FF;
+    width: 100vw;
 }
 
 .profile-picture {
-    width: 10rem;
+    width: 11rem;
     height: 10rem;
     border: 2px solid #DFF6FF;
 }
@@ -442,16 +482,14 @@ footer ul li a{
 .page-top{
     margin-top: 100px;
 }
-@media (min-width: 1200px) {
-    .responsive-font-example {
-      font-size: 20px;
-    }
-  }
-  /* If the screen size is smaller than 1200px, set the font-size to 80px */
-  @media (max-width: 414px) {
-    .responsive-font-example {
-      font-size: 15px;
-    }
-  }
+
+.profile-details{
+    font-size: calc(.5em + .5vw);
+}
+
+.line{
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
 /*OTHER PAGES*/
 

@@ -22,7 +22,7 @@
         </symbol>
       </svg>
     <header class="sticky-header">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container align-items-center justify-content-evenly">
               <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
@@ -32,8 +32,7 @@
               </button>
               <div></div>
               <a class="navbar-brand fs-4 m-0" href="#"><img class="logo" src="./images/logo-removebg-preview.png" alt="" srcset=""></a>
-              <div
-              class="sidebar offcanvas offcanvas-end"
+              <div class="sidebar offcanvas offcanvas-start"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">
@@ -69,6 +68,7 @@
                   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                 </svg></a>
               </div>
+              <div class="modal-backdrop fade none"></div>
             </div>
           </nav>
     </header>
