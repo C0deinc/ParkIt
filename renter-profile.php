@@ -15,8 +15,24 @@ require_once('./includes/head.php');
 
     <section class="profile-section-one">
     <div class="container py-5 d-flex justify-content-center align-items-center">
-            <div class="profile-picture rounded-circle">
-                    <img src="" alt="" class="img-responsive">
+    <div class="profile">
+    <?php
+    /*
+    $select = mysqli_query($conn, "SELECT * FROM `account` WHERE id = '$id'")
+    or die('query failed');
+    if(mysqli_num_rows($select) > 0){
+        $fetch = mysqli_fetch_assoc($select);
+        if($fetch['image'] == ''){
+            echo '<img src="/images/default-profile.png" class="rounded-circle">';
+        } else {
+            echo '<img src="uploaded_img/' . $fetch['image'] . '" class="rounded-circle">';
+        }
+    }
+    */
+    ?>
+</div>
+            <div class="profile-picture">
+                    <img src="/images/default-pic.jpg" alt="" class="img-responsive w-100 h-100 rounded-circle border border-black">
             </div>
             <div class="container pt-5" style="padding-left: 50px;" >
                     <div class="">

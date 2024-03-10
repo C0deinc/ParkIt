@@ -391,10 +391,13 @@ footer ul li a{
 
 .profile-picture {
     width: 11rem;
-    height: 10rem;
-    border: 2px solid #DFF6FF;
+    height: 11rem;
 }
 
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
 .parkit-wallet-container {
     border-bottom: 1px solid lightgray;
 }
