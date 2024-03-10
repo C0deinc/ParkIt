@@ -394,9 +394,9 @@ footer ul li a{
     height: 11rem;
 }
 
-.img-fluid{
+.img-responsive{
     width: 100%;
-    height: auto;
+    height: 11rem;
 }
 .parkit-wallet-container {
     border-bottom: 1px solid lightgray;

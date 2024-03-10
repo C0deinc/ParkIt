@@ -9,54 +9,19 @@ require_once('./includes/head.php');
         <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
             <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
                 <i><a href="/index.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
-                <li class="text-white fs-5" style="padding-left: 50px;"><h4>Profile</h4></li>>
+                <li class="text-white fs-5" style="padding-left: 50px;"><h4>My account</h4></li>>
             </ul>
         </div>
 
     <section class="profile-section-one">
-    <div class="container py-5 d-flex justify-content-center align-items-center">
-    <div class="profile">
-    <?php
-    /*
-    $select = mysqli_query($conn, "SELECT * FROM `account` WHERE id = '$id'")
-    or die('query failed');
-    if(mysqli_num_rows($select) > 0){
-        $fetch = mysqli_fetch_assoc($select);
-        if($fetch['image'] == ''){
-            echo '<img src="/images/default-profile.png" class="rounded-circle">';
-        } else {
-            echo '<img src="uploaded_img/' . $fetch['image'] . '" class="rounded-circle">';
-        }
-    }
-    */
-    ?>
-</div>
-            <div class="profile-picture">
-                    <img src="/images/default-pic.jpg" alt="" class="img-responsive w-100 h-100 rounded-circle border border-black">
-            </div>
-            <div class="container pt-5" style="padding-left: 50px;" >
-                    <div class="">
-                    <i class="fa-solid fa-address-card me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Harolhette O. Rom</a>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa-envelope me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">haroletrom@gmail.com</a>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-venus-mars me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Male</a>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-mobile me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">09557651889</a>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-location-dot me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Zamboanga del sur, Zamoanga City,Upper Calarian, Southcom Village</a>
+            <div class="container d-flex justify-content-center align-items-center pt-4">
+                    <div class="profile-picture container">
+                            <img src="/images/id-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
             </div>
-    </div>
+            <div class="container d-flex justify-content-center align-items-center py-4">
+                <a href="" class="text-decoration-none text-white profile-details fs-2">Mohammad Sali Jauhari</a>
+            </div>
     </section>
 
 
@@ -77,7 +42,7 @@ require_once('./includes/head.php');
         <div class="p-lists-container">
             <div class="p-view-profile px-5 py-4">
                 <i class="fa-solid fa-user fa-lg me-4" style="color: #06283D;"></i>
-                <a href="" class="text-decoration-none" style="color: #06283D;">View profile</a>
+                <a href="view-profile.php" class="text-decoration-none" style="color: #06283D;">View profile</a>
             </div>
             <div class="p-my-reviews px-5 py-4">
                 <i class="fa-solid fa-star fa-lg me-4" style="color: #06283D;"></i>
