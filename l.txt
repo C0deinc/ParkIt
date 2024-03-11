@@ -1,0 +1,22 @@
+<div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                                                        <i class="fa-solid fa-motorcycle fa-2xl mt-3 mb-3"></i>
+                                                        <p>Owned</p>
+                                                    </div>
+                                                    <div class="col-lg-4 d-flex flex-column align-items-center mb-2">
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Vehicle</p>
+                                                            <p>Motorcycle</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Vehicle Description</p>
+                                                            <p class="m-0">Model: <span></span></p>
+                                                            <p class="m-0">Engine: <span></span></p>
+                                                            <p class="m-0">Transmission: <span></span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                                                        <div>
+                                                            <p class="m-0" style="font-size: smaller;">Plate Number</p>
+                                                            <p>JEFF 123</p>
+                                                        </div>
+                                                    </div>

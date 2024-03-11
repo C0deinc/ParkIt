@@ -148,10 +148,13 @@
     color: #06283D;
 }
 
-.ls-motorcycles {
+.ls-motorcycles, .ls-tricycles {
     border: 1px solid #06283D;
     border-radius: 1rem;
 }
+
+
+
 
 /*PARKING LOT SPACE PAGE*/
 
@@ -159,6 +162,19 @@
 
 .gs-get-space {
     display: -webkit-box;
+}
+
+.gs-renter-profile {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #DFF6FF;
+}
+
+div .vehicle-icons {
+    border: 1px solid #06283D; 
+    width: 5rem; 
+    height: 4rem;
+    border-radius: 1rem;
 }
 
 /*GETTING SPACE PAGE*/
