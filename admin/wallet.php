@@ -27,19 +27,19 @@
                                     <div class="row">
                                         <div class="col-md-4 text-center">
                                             <a href="wallet.php" class="clickable-item">
-                                                <img src="/admin/images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
+                                                <img src=" /images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
                                                 <h5 class="card-title text-center">TRANSACTION</h5>     
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_user.php" class="clickable-item">
-                                                <img src="/admin/images/group-of-users.png" alt="Image" class="img-fluid custom-img">
+                                                <img src=" /images/group-of-users.png" alt="Image" class="img-fluid custom-img">
                                                 <h5 class="card-title text-center">USER</h5>
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_deposit.php" class="clickable-item">
-                                                <img src="/admin/images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
+                                                <img src=" /images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
                                                 <h5 class="card-title text-center">DEPOSIT</h5>
                                             </a>
                                         </div>
@@ -98,7 +98,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <img src="/admin/images/user.png" alt="Profile Image" width="30" height="30">
+                                                        <img src=" /images/user.png" alt="Profile Image" width="30" height="30">
                                                     </td>
                                                     <td>Mark Tan</td>
                                                     <td>01/04/23</td>

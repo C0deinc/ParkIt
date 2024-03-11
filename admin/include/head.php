@@ -11,5 +11,5 @@
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/admin/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
