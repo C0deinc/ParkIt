@@ -12,4 +12,5 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/images/p-logo.png" type="image/x-icon">
 </head>
