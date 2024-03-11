@@ -114,7 +114,7 @@
                     <div class="me-5">
                         <img src="./images/pic6.jpg" alt="" class="gcash-img rounded">
                     </div>
-                    <div class="ls-cash d-flex flex-row justify-content-center align-items-center py-3 px-4">
+                    <div class="ls-cash d-flex flex-row justify-content-center align-items-center p-0">
                         <i class="fa-solid fa-wallet fa-2xl me-3"></i>
                         <p class="mb-0 fs-5">Cash</p>
                     </div>
@@ -137,10 +137,134 @@
               </div>
         </div>
         <div>
-            <div class="ls-motorcycles mt-5 px-3 py-1" style="color: #06283D;">
-                <p class="m-0 fw-bold fs-1">A <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For motorcycles</span></p>
+          <div class="ls-motorcycles mt-5 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleMotorcycleSection()">
+              <p class="m-0 fw-bold fs-1">A <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For motorcycles</span></p>
+          </div>
+          <div id="motorcycleContent" style="display: none;">
+              <div class="row g-0 mt-4">
+                  <div class="col-sm-12 col-lg-6">
+                      <div class="row g-0 text-center">
+                          <div class="col-6">
+                              <p>Available = 0</p>
+                          </div>
+                          <div class="col-6">
+                              <p>Occupied = 0</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                      <div class="row g-0 text-center">
+                          <div class="col-6">
+                              <p>Reserved = 0</p>
+                          </div>
+                          <div class="col-6">
+                              <p>Unavailable = 0</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
+          </div>
+        </div>
+
+        <div>
+            <div class="ls-tricycles mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleTricycleSection()">
+                <p class="m-0 fw-bold fs-1">A1 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For tricycles</span></p>
+            </div>
+            <div id="tricycleContent" style="display: none;">
                 <div class="row g-0 mt-4">
                     <div class="col-sm-12 col-lg-6">
                         <div class="row g-0 text-center">
@@ -163,79 +287,138 @@
                         </div>
                     </div>
                 </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-            <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
-  <div class="carousel-inner w-100">
-    <div class="carousel-item active">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=1">
         </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=2">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=3">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=4">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=5">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=6">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=7">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-md-3">
-        <div class="card card-body">
-          <img class="img-fluid" src="http://placehold.it/380?text=8">
-        </div>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-            </div>
-        </div>
+
+
+        <script>
+            // Function to toggle motorcycle section visibility
+            function toggleMotorcycleSection() {
+                var motorcycleContent = document.getElementById("motorcycleContent");
+                var isVisible = motorcycleContent.style.display === "block";
+                motorcycleContent.style.display = isVisible ? "none" : "block";
+                // Store visibility state in localStorage
+                localStorage.setItem("motorcycleContentVisible", isVisible ? "false" : "true");
+            }
+
+            // Function to toggle tricycle section visibility
+            function toggleTricycleSection() {
+                var tricycleContent = document.getElementById("tricycleContent");
+                var isVisible = tricycleContent.style.display === "block";
+                tricycleContent.style.display = isVisible ? "none" : "block";
+                // Store visibility state in localStorage
+                localStorage.setItem("tricycleContentVisible", isVisible ? "false" : "true");
+            }
+
+            // Check localStorage on page load to set initial visibility
+            document.addEventListener("DOMContentLoaded", function () {
+                var isMotorcycleContentVisible = localStorage.getItem("motorcycleContentVisible");
+                if (isMotorcycleContentVisible === "true") {
+                    document.getElementById("motorcycleContent").style.display = "block";
+                }
+
+                var isTricycleContentVisible = localStorage.getItem("tricycleContentVisible");
+                if (isTricycleContentVisible === "true") {
+                    document.getElementById("tricycleContent").style.display = "block";
+                }
+            });
+        </script>
+
     </section>
+
+    
     
 
 

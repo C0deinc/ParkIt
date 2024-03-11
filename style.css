@@ -148,10 +148,11 @@
     color: #06283D;
 }
 
-.ls-motorcycles {
+.ls-motorcycles, .ls-tricycles {
     border: 1px solid #06283D;
     border-radius: 1rem;
 }
+
 
 
 
