@@ -16,30 +16,30 @@ require_once('./includes/head.php');
     <section class="profile-section-one mt-5">
             <div class="container pt-5">
                     <div class="profile-picture container">
-                            <img src="/images/id-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
+                            <img src="/images/IMG_0024.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
                     
             </div>
             <div class="container pt-5 text-center">
                     <div class="">
                     <i class="fa-solid fa-address-card me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Mohammad Sali Jauhari</a>
+                    <a class="text-decoration-none text-white profile-details">Mohammad Sali Jauhari</a>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa-envelope me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">mohammadsali@gmail.com</a>
+                    <a class="text-decoration-none text-white profile-details">mohammadsali@gmail.com</a>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-venus-mars me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Male</a>
+                    <a class="text-decoration-none text-white profile-details">Male</a>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-mobile me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">09557651889</a>
+                    <a class="text-decoration-none text-white profile-details">09557651889</a>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-location-dot me-4 text-white"></i>
-                    <a href="" class="text-decoration-none text-white profile-details">Zamboanga del sur, Zamoanga City,Upper Calarian, Southcom Village</a>
+                    <a class="text-decoration-none text-white profile-details">Zamboanga del sur, Zamoanga City,Upper Calarian, Southcom Village</a>
                     </div>
             </div>
     </section>

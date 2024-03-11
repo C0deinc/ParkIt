@@ -16,7 +16,7 @@ require_once('./includes/head.php');
     <section class="profile-section-one">
             <div class="container d-flex justify-content-center align-items-center pt-4">
                     <div class="profile-picture container">
-                            <img src="/images/id-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
+                            <img src="/images/IMG_0024.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
             </div>
             <div class="container d-flex justify-content-center align-items-center py-4">
