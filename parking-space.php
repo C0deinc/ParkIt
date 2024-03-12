@@ -1239,34 +1239,104 @@
         <div class="reviews pt-5">
             <p class="fw-bold fs-5">Reviews</p>
             <div class="stars d-flex flex-row">
-                <div class="me-4">
+                <div class="d-flex align-items-center me-4">
                     <p class="fs-1 fw-bold">4.5</p>
                 </div>
-                <div class="mt-2 me-3">
-                    <i class="fa-solid fa-star fs-4" style="color: yellow;"></i>
-                    <i class="fa-solid fa-star fs-4" style="color: yellow;"></i>
-                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
-                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
-                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
+                <div class="d-flex justify-content-center align-items-center me-2">
+                    <i class="fa-solid fa-star fs-4 mb-3" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star fs-4 mb-3" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star fs-4 mb-3" style="color: lightgray;"></i>
+                    <i class="fa-solid fa-star fs-4 mb-3" style="color: lightgray;"></i>
+                    <i class="fa-solid fa-star fs-4 mb-3" style="color: lightgray;"></i>
                 </div>
-                <div class="mt-2">
-                    <p>498 reviews</p>
+                <div class="d-flex align-items-center">
+                    <p style="font-size: 0.8rem;">498 reviews</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                    <div>
+            <div class="row d-flex flex-row justify-content-evenly">
+                <div class="col-sm-12 col-lg-4 d-flex flex-row p-4 mb-3" style="border: 1px solid lightgray; border-radius: 1rem;">
+                    <div class="me-4">
                         <img src="./images/bg.jpg" alt="" style="width: 4rem; height: 4rem; border-radius: 3rem;">
                     </div>
                     <div>
-
+                        <p class="fw-bold m-0 mb-1">harolet rom</p>
+                        <div class="mb-1">
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <p style="font-size: 0.8rem; color: gray;">25 - 08 - 2023  |  09:59</p>
+                        <p>The parking lot space rental service exceeded my expectations. The process was seamless, and the reserved spot was easily accessible. The rates were... <span class="fw-bold">More</span></p>
+                        <p></p>
+                        <div class="d-flex flex-row ">
+                            <div class="d-flex flex-row me-5">
+                                <i class="fa-solid fa-thumbs-up fs-4 me-2"></i>
+                                <p>Like</p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <i class="fa-solid fa-thumbs-down fs-4 me-2" style="color: gray;"></i>
+                                <p>Dislike</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    
+                <div class="col-sm-12 col-lg-4 d-flex flex-row p-4 mb-3" style="border: 1px solid lightgray; border-radius: 1rem;">
+                    <div class="me-4">
+                        <img src="./images/bg.jpg" alt="" style="width: 4rem; height: 4rem; border-radius: 3rem;">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0 mb-1">harolet rom</p>
+                        <div class="mb-1">
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <p style="font-size: 0.8rem; color: gray;">25 - 08 - 2023  |  09:59</p>
+                        <p>The parking lot space rental service exceeded my expectations. The process was seamless, and the reserved spot was easily accessible. The rates were... <span class="fw-bold">More</span></p>
+                        <p></p>
+                        <div class="d-flex flex-row ">
+                            <div class="d-flex flex-row me-5">
+                                <i class="fa-solid fa-thumbs-up fs-4 me-2"></i>
+                                <p>Like</p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <i class="fa-solid fa-thumbs-down fs-4 me-2" style="color: gray;"></i>
+                                <p>Dislike</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    
+                <div class="col-sm-12 col-lg-4 d-flex flex-row p-4 mb-3" style="border: 1px solid lightgray; border-radius: 1rem;">
+                    <div class="me-4">
+                        <img src="./images/bg.jpg" alt="" style="width: 4rem; height: 4rem; border-radius: 3rem;">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0 mb-1">harolet rom</p>
+                        <div class="mb-1">
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <p style="font-size: 0.8rem; color: gray;">25 - 08 - 2023  |  09:59</p>
+                        <p>The parking lot space rental service exceeded my expectations. The process was seamless, and the reserved spot was easily accessible. The rates were... <span class="fw-bold">More</span></p>
+                        <p></p>
+                        <div class="d-flex flex-row ">
+                            <div class="d-flex flex-row me-5">
+                                <i class="fa-solid fa-thumbs-up fs-4 me-2"></i>
+                                <p>Like</p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <i class="fa-solid fa-thumbs-down fs-4 me-2" style="color: gray;"></i>
+                                <p>Dislike</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
