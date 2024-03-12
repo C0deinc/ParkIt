@@ -625,7 +625,616 @@
                 </div>
             </div>
         </div>
-        
+
+        <div class="light-commercial-vehicle">
+            <div class="ls-vj mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleLCVehicleSection()">
+                <p class="m-0 fw-bold fs-1">B2 <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light commercial vehicle</span></p>
+            </div>
+            <div id="lcvehicleContent" style="display: none;">
+                <div class="row g-0 mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Available = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Occupied = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Reserved = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Unavailable = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heavy-commercial-vehicle">
+            <div class="ls-vj mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleHCVehicleSection()">
+                <p class="m-0 fw-bold fs-1">C <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy commercial vehicle</span></p>
+            </div>
+            <div id="hcvehicleContent" style="display: none;">
+                <div class="row g-0 mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Available = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Occupied = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Reserved = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Unavailable = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buses">
+            <div class="ls-vj mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleBusesSection()">
+                <p class="m-0 fw-bold fs-1">D <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For buses</span></p>
+            </div>
+            <div id="busesContent" style="display: none;">
+                <div class="row g-0 mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Available = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Occupied = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Reserved = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Unavailable = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-articulated-vehicle">
+            <div class="ls-vj mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleLAVehicleSection()">
+                <p class="m-0 fw-bold fs-1">BE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For light articulated vehicle</span></p>
+            </div>
+            <div id="lavehicleContent" style="display: none;">
+                <div class="row g-0 mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Available = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Occupied = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Reserved = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Unavailable = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heavy-articulated-vehicle">
+            <div class="ls-vj mt-2 px-3 py-1" style="color: #06283D; cursor: pointer;" onclick="toggleHAVehicleSection()">
+                <p class="m-0 fw-bold fs-1">CE <span class="fw-normal fst-italic fs-6 ms-1" style="color: lightgray;">For heavy articulated vehicle</span></p>
+            </div>
+            <div id="havehicleContent" style="display: none;">
+                <div class="row g-0 mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Available = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Occupied = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="row g-0 text-center">
+                            <div class="col-6">
+                                <p>Reserved = 0</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Unavailable = 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 text-center me-4" style="width: 9rem;">
+
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+                            
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-center" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 mt-2 text-center">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 d-flex flex-row justify-content-around">
+                        <div class="card mb-4 me-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div class="py-3" style="border-top: 1px solid lightgray;">
+                                <p>Occupied</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4" style="width: 9rem;">
+                            <div class="py-3">
+                                <p class="fw-bold">C1</p>
+                            </div>
+
+                            <div style="border-top: 1px solid lightgray;">
+                                <p class="mt-3">Occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <script>
@@ -661,6 +1270,46 @@
                 localStorage.setItem("vjContentVisible", isVisible ? "false" : "true");
             }
 
+            function toggleLCVehicleSection() {
+                var lcvehicleContent = document.getElementById("lcvehicleContent");
+                var isVisible = lcvehicleContent.style.display === "block";
+                lcvehicleContent.style.display = isVisible ? "none" : "block";
+
+                localStorage.setItem("lcvehicleContentVisible", isVisible ? "false" : "true");
+            }
+
+            function toggleHCVehicleSection() {
+                var hcvehicleContent = document.getElementById("hcvehicleContent");
+                var isVisible = hcvehicleContent.style.display === "block";
+                hcvehicleContent.style.display = isVisible ? "none" : "block";
+
+                localStorage.setItem("hcvehicleContentVisible", isVisible ? "false" : "true");
+            }
+
+            function toggleBusesSection() {
+                var busesContent = document.getElementById("busesContent");
+                var isVisible = busesContent.style.display === "block";
+                busesContent.style.display = isVisible ? "none" : "block";
+
+                localStorage.setItem("busesContentVisible", isVisible ? "false" : "true");
+            }
+
+            function toggleLAVehicleSection() {
+                var lavehicleContent = document.getElementById("lavehicleContent");
+                var isVisible = lavehicleContent.style.display === "block";
+                lavehicleContent.style.display = isVisible ? "none" : "block";
+
+                localStorage.setItem("lavehicleContentVisible", isVisible ? "false" : "true");
+            }
+
+            function toggleHAVehicleSection() {
+                var havehicleContent = document.getElementById("havehicleContent");
+                var isVisible = havehicleContent.style.display === "block";
+                havehicleContent.style.display = isVisible ? "none" : "block";
+
+                localStorage.setItem("havehicleContentVisible", isVisible ? "false" : "true");
+            }
+
             document.addEventListener("DOMContentLoaded", function () {
                 var isMotorcycleContentVisible = localStorage.getItem("motorcycleContentVisible");
                 if (isMotorcycleContentVisible === "true") {
@@ -680,6 +1329,31 @@
                 var isVJContentVisible = localStorage.getItem("vjContentVisible");
                 if (isVJContentVisible === "true") {
                     document.getElementById("vjContent").style.display = "block";
+                }
+
+                var isLCVehicleContentVisible = localStorage.getItem("lcvehicleContentVisible");
+                if (isLCVehicleContentVisible === "true") {
+                    document.getElementById("lcvehicleContent").style.display = "block";
+                }
+
+                var isHCVehicleContentVisible = localStorage.getItem("hcvehicleContentVisible");
+                if (isHCVehicleContentVisible === "true") {
+                    document.getElementById("hcvehicleContent").style.display = "block";
+                }
+
+                var isBusesContentVisible = localStorage.getItem("busesContentVisible");
+                if (isBusesContentVisible === "true") {
+                    document.getElementById("busesContent").style.display = "block";
+                }
+
+                var isLAVehicleContentVisible = localStorage.getItem("lavehicleContentVisible");
+                if (isLAVehicleContentVisible === "true") {
+                    document.getElementById("lavehicleContent").style.display = "block";
+                }
+
+                var isHAVehicleContentVisible = localStorage.getItem("havehicleContentVisible");
+                if (ishAVehicleContentVisible === "true") {
+                    document.getElementById("havehicleContent").style.display = "block";
                 }
             });
         </script>
