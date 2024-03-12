@@ -1236,6 +1236,41 @@
             </div>
         </div>
 
+        <div class="reviews pt-5">
+            <p class="fw-bold fs-5">Reviews</p>
+            <div class="stars d-flex flex-row">
+                <div class="me-4">
+                    <p class="fs-1 fw-bold">4.5</p>
+                </div>
+                <div class="mt-2 me-3">
+                    <i class="fa-solid fa-star fs-4" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star fs-4" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
+                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
+                    <i class="fa-solid fa-star fs-4" style="color: lightgray;"></i>
+                </div>
+                <div class="mt-2">
+                    <p>498 reviews</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div>
+                        <img src="./images/bg.jpg" alt="" style="width: 4rem; height: 4rem; border-radius: 3rem;">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    
+                </div>
+            </div>
+        </div>
+
 
         <script>
             function toggleMotorcycleSection() {
