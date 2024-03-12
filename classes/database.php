@@ -86,5 +86,18 @@ class Database
             throw new Exception("Query error: " . $e->getMessage());
         }
     }
+
+    function fetchProfileImage() {
+        try {
+            // Assuming you have a method to fetch the profile image from the database
+            $stmt = $this->connection->query("SELECT profile_pic FROM account");
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            // Return the profile image
+            return isset($result['profile_pic']) ? $result['profile_pic'] : null;
+        } catch (PDOException $e) {
+            throw new Exception("Query error: " . $e->getMessage());
+        }
+    }
 }
 ?>

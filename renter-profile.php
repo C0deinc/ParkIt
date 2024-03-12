@@ -1,48 +1,72 @@
 <?php
+session_start(); // Start the session to access session variables
+
 require_once('./classes/database.php');
 
-// Example usage:
+// Check if user is not logged in, then redirect to login page
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
 
+// Example usage:
 try {
-  $db = new Database();
-  $db->connect();
-  $username = $db->fetchUsername();
+    $db = new Database();
+    $db->connect();
+
+    // Fetch username and profile picture of the logged-in user
+    $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+    if ($user_id) {
+        $username = $db->fetchUsername($user_id);
+        $profile_pic = $db->fetchProfileImage($user_id);
+    } else {
+        // Handle the case where user_id is not set
+        // You may redirect the user to login page or display an error message
+    }
 } catch (Exception $e) {
-  echo "Error: " . $e->getMessage();
+    echo "Error: " . $e->getMessage();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <?php
 $title = 'Profile';
 $home_page = '';
 require_once('./includes/head.php');
 ?>
+
 <body>
-        <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
-            <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
-                <i><a href="/index.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
-                <li class="text-white fs-5" style="padding-left: 50px;"><h4>My account</h4></li>>
-            </ul>
-        </div>
+    <div class="container-fluid" style="background-color: #06283D; width: 100vw; height: 10vh;">
+        <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
+            <i><a href="/index.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
+            <li class="text-white fs-5" style="padding-left: 50px;">
+                <h4>My account</h4>
+            </li>
+        </ul>
+    </div>
 
     <section class="profile-section-one">
-            <div class="container d-flex justify-content-center align-items-center pt-4">
-                    <div class="profile-picture container">
-                            <img src="/images/IMG_0024.jpg" alt="" class="img-responsive rounded-circle border border-black">
-                    </div>
+        <div class="container d-flex justify-content-center align-items-center pt-4">
+            <div class="profile-picture container">
+                <?php if ($profile_pic): ?>
+                <!-- If profile image exists, display it -->
+                <img src="<?php echo $profile_pic; ?>" alt="" class="img-responsive rounded-circle border border-black">
+                <?php else: ?>
+                <!-- If no profile image exists, display a placeholder image -->
+                <img src="/images/default-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
+                <?php endif; ?>
             </div>
-            <div class="container d-flex justify-content-center align-items-center py-4">
-            <?php
-                        if ($username !== null) {
-                        echo "<h4>$username</h4>";
-                        } else {
-                        echo "<h4>No username found.</h4>";
-                        }
-            ?>
-            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center py-4">
+            <?php if ($username !== null): ?>
+            <h4><?php echo $username; ?></h4>
+            <?php else: ?>
+            <h4>No username found.</h4>
+            <?php endif; ?>
+        </div>
     </section>
-
 
     <section class="profile-section-two">
         <div class="parkit-wallet-container px-5 py-4">
@@ -75,6 +99,7 @@ require_once('./includes/head.php');
                 <i class="fa-solid fa-key fa-lg me-4" style="color: #06283D;"></i>
                 <a href="" class="text-decoration-none" style="color: #06283D;">My rentals</a>
             </div>
+
             <div class="p-history px-5 py-4">
                 <i class="fa-solid fa-book fa-lg me-4" style="color: #06283D;"></i>
                 <a href="" class="text-decoration-none" style="color: #06283D;">History</a>

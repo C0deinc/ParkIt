@@ -5,7 +5,7 @@ require_once 'database.php';
 Class Account{
     //attributes
 
-    public $id;
+    public $user_id;
     public $firstname;
     public $middlename;
     public $lastname;
