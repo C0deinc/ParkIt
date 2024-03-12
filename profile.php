@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="profile-section-one">
+        <div class="row g-0 p-5 d-flex flex-column">
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="profile-picture rounded-circle p-1 mt-5">
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="profile-email">
+                    <p class="fs-5" style="color: #DFF6FF;">haroletrom@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile-section-two">
+        <div class="parkit-wallet-container px-5 py-4">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="parkit-wallet">
+                    <p class="fs-5" style="color: #06283D;">parkit<span class="fw-bold fst-italic" style="color: #47B5FF">wallet</span></p>
+                </div>
+                <div class="p-amount mb-0 text-center rounded">
+                    <p style="color: #06283D;">₱0.00</p>
+                </div>
+            </div>
+            <div>
+                <p style="color: gray">Balance</p>
+            </div>
+        </div>
+        <div class="p-lists-container">
+            <div class="p-view-profile px-5 py-4">
+                <i class="fa-solid fa-user fa-lg me-4" style="color: #06283D;"></i>
+                <p>View profile</p>
+            </div>
+            <div class="p-my-reviews px-5 py-4">
+                <i class="fa-solid fa-star fa-lg me-4" style="color: #06283D;"></i>
+                <p>My reviews</p>
+            </div>
+            <div class="p-my-vehicle px-5 py-4">
+                <i class="fa-solid fa-car fa-lg me-4" style="color: #06283D;"></i>
+                <p>My vehicle</p>
+            </div>
+            <div class="p-my-rentals px-5 py-4">
+                <i class="fa-solid fa-key fa-lg me-4" style="color: #06283D;"></i>
+                <p>My rentals</p>
+            </div>
+            <div class="p-history px-5 py-4">
+                <i class="fa-solid fa-book fa-lg me-4" style="color: #06283D;"></i>
+                <p>History</p>
+            </div>
+            <div class="p-help-center px-5 py-4">
+                <i class="fa-solid fa-circle-info fa-lg me-4" style="color: #06283D;"></i>
+                <p>Help center</p>
+            </div>
+            <div class="p-settings px-5 py-4">
+                <p>Settings</p>
+            </div>
+            <div class="p-terms-condition-privacy px-5 py-4">
+                <p>Terms & Conditions / Privacy</p>
+            </div>
+            <div class="p-switch-to-space-owner px-5 py-4 d-flex flex-row justify-content-between align-items-center">
+                <p>Switch to <span style="color: #06283D" class="fw-bold">Space Owner</span></p>
+                <i class="fa-solid fa-repeat fa-lg me-4 mb-3" style="color: #06283D;"></i>
+            </div>
+            <div class="p-logout px-5 py-4">
+                <p>Log out</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a3bf0b829f.js"></script>
+</body>
+</html>
