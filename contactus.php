@@ -31,16 +31,16 @@ require_once('./includes/renter-nav.php');
           </div>
           <div class="col-md-6 rounded-3 p-5">
               <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label fs-4">Email</label>
+                  <label for="exampleInputEmail1" class="form-label fs-4 custom-font-size">Email</label>
                   <input type="email" class="form-control border-info" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text fs-6">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label fs-4">Name</label>
+                  <label for="exampleInputPassword1" class="form-label fs-4 custom-font-size">Name</label>
                   <input class="form-control border-info">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label fs-4">Your message</label>
+                    <label for="exampleFormControlTextarea1" class="form-label fs-4 custom-font-size">Your message</label>
                     <textarea class="form-control border-info" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-center align-items-center">

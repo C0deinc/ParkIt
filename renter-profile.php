@@ -1,3 +1,16 @@
+<?php
+require_once('./classes/database.php');
+
+// Example usage:
+
+try {
+  $db = new Database();
+  $db->connect();
+  $username = $db->fetchUsername();
+} catch (Exception $e) {
+  echo "Error: " . $e->getMessage();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -20,7 +33,13 @@ require_once('./includes/head.php');
                     </div>
             </div>
             <div class="container d-flex justify-content-center align-items-center py-4">
-                <a href="" class="text-decoration-none text-white profile-details fs-2">Mohammad Sali Jauhari</a>
+            <?php
+                        if ($username !== null) {
+                        echo "<h4>$username</h4>";
+                        } else {
+                        echo "<h4>No username found.</h4>";
+                        }
+            ?>
             </div>
     </section>
 

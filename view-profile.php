@@ -1,3 +1,19 @@
+<?php
+require_once('./classes/database.php');
+require_once('./classes/user.class.php');
+
+        try {
+            $db = new Database();
+            $db->connect();
+            $firstname = $db->fetchFullNames();
+            $middlename = $db->fetchFullNames();
+            $lastname = $db->fetchFullNames();
+            $userDetails = $db->fetchUserDetails();
+
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage();
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -18,28 +34,53 @@ require_once('./includes/head.php');
                     <div class="profile-picture container">
                             <img src="/images/IMG_0024.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
-                    
             </div>
+
             <div class="container pt-5 text-center">
                     <div class="">
                     <i class="fa-solid fa-address-card me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">Mohammad Sali Jauhari</a>
+                    <a class="text-decoration-none text-white profile-details">
+                    <?php
+                        if ($firstname !== null && $middlename !== null && $lastname !== null) {
+                        echo "<a class='text-decoration-none text-white profile-details'>$firstname</a>";
+                        }
+                    ?>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa-envelope me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">mohammadsali@gmail.com</a>
+                    <?php
+                        if ($userDetails !== null && isset($userDetails['email'])) {
+                        $email = $userDetails['email'];
+                        echo "<a class='text-decoration-none text-white profile-details'>$email</a>";
+                        }
+                        ?>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-venus-mars me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">Male</a>
+                    <?php
+                        if ($userDetails !== null && isset($userDetails['sex'])) {
+                        $sex = $userDetails['sex'];
+                        echo "<span class='text-decoration-none text-white profile-details'>$sex</span>";
+                        }
+                        ?>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-mobile me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">09557651889</a>
+                    <?php
+                        if ($userDetails !== null && isset($userDetails['contactnumber'])) {
+                        $contactnumber = $userDetails['contactnumber'];
+                        echo "<span class='text-decoration-none text-white profile-details'>$contactnumber</span>";
+                        }
+                        ?>
                     </div>
                     <div class="pt-3">
                     <i class="fa-solid fa fa-location-dot me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">Zamboanga del sur, Zamoanga City,Upper Calarian, Southcom Village</a>
+                    <?php
+                        if ($userDetails !== null && isset($userDetails['barangay']) && isset($userDetails['city']) && isset($userDetails['province']) && isset($userDetails['zipcode'])) {
+                        $address = $userDetails['barangay'] . ', ' . $userDetails['city'] . ', ' . $userDetails['province'] . ' ' . $userDetails['zipcode'];
+                        echo "<span class='text-decoration-none text-white profile-details'>$address</span>";
+                        }
+                        ?>
                     </div>
             </div>
     </section>

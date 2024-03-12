@@ -23,7 +23,7 @@ require_once('./includes/head.php');
     <h1 class="text-center page-top m-0" style="color:#3586ff;">OUR STORY</h1>
     <hr class="hr">
 
-    <div class="container">
+    <div class="container text-center custom-text">
         <div class="pb-md-4 pb-3 flex-lg-row flex-column-reverse flex-md-column-reverse row">
             <div class="mt-lg-0 mt-md-4 mt-4 col-lg-6 col-md-12 col-12">
                 <p class="responsive-font-example">At ParkIt, our story is deeply rooted in the recognition of the everyday challenges faced by urban dwellers when it comes to parking. Our journey began with a simple yet profound idea: to revolutionize the parking experience by providing a seamless and eco-conscious solution.</p>
