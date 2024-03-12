@@ -4,7 +4,7 @@
 <?php
     $title = 'Reports';
     $report_page = 'active';
-    require_once('./include/head.php');
+    require_once('../include/head.php');
 ?>
 <body>
     <!-- Page Content -->
@@ -12,31 +12,31 @@
         <div class="row">
             <!-- Sidebar -->
             <?php
-            require_once('./include/sidebar.php');
+            require_once('../include/sidebar.php');
             ?>
                     <!-- Main Content -->
                     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" >
                         <div class="row d-flex justify-content-center align-items-center pt-3">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <a href="uf&rs.php" class="card-link">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">
+                                            <h5 class="card-title text-center" style="font-weight: bold;">
                                                 USER FEEDBACK AND REVIEWS
                                             </h5>
-                                            <p class="card-text text-center" style="font-size: 30px;">100</p>
+                                            <p class="card-text text-center" style="font-size: 30px; font-weight:bold;">100</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
-                                <a href="#" class="card-link"></a>
+                            <div class="col-md-5">
+                                <a href="warning.account.php" class="card-link">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">
+                                            <h5 class="card-title text-center" style="font-weight: bold;">
                                                 WARNING
                                             </h5>
-                                            <p class="card-text text-center" style="font-size: 30px;">500</p>
+                                            <p class="card-text text-center" style="font-size: 30px; font-weight:bold;">500</p>
                                         </div>
                                     </div>
                                 </a>
@@ -53,19 +53,21 @@
                                                     <a href="ts.php" class="card-link">
                                                         <div class="card">
                                                             <div class="card-body">
-                                                                <h6 class="card-title">TRANSACTION</h6>
+                                                                <h6 class="card-title" style="font-weight: bold;">TRANSACTION</h6>
                                                                 <canvas id="transaction" height="200"></canvas>
                                                             </div>
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            <h6 class="card-title">INCIDENTS</h6>
-                                                            <canvas id="incident" height="200"></canvas>
+                                            
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h6 class="card-title" style="font-weight: bold;">INCIDENTS</h6>
+                                                                <canvas id="incident" height="200"></canvas>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,12 +82,14 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-5">
-                                                    <div style="position: relative;">
-                                                        <canvas id="areaScalingChart" height="200"></canvas>
-                                                        <div style="position: absolute; top: 50%; right: -500px; transform: translateY(-50%); text-align: right;">
-                                                            <h5 class="card-title" style="font-size: 50px;"> AREA SCALING</h5>
+                                                    <a href="tps.php" class="card-link">
+                                                        <div style="position: relative;">
+                                                            <canvas id="areaScalingChart" height="200"></canvas>
+                                                            <div style="position: absolute; top: 50%; right: -500px; transform: translateY(-50%); text-align: right;">
+                                                                <h5 class="card-title" style="font-size: 50px; font-weight: bold;"> AREA SCALING</h5>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,116 +102,13 @@
             </div>
 
     <?php
-        require_once('./include/js.php')
+        require_once('../include/js.php');
+        require_once('../scripts/script.php');
+        require_once('../scripts/script.reports.php');
     ?>
 
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Chart.js Script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-            // Line Chart
-            var lineCtx = document.getElementById("incident").getContext("2d");
-            var lineData = {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May"],
-                datasets: [{
-                    label: "INCIDENTS",
-                    data: [3, 10, 8, 0, 15],
-                    fill: false
-                }]
-            };
-            var lineOptions = {
-                responsive: true,
-                scales: {
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'MONTHS'
-                        }
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'NO. OF INCIDENT'
-                        }
-                    }
-                }
-            };
-            new Chart(lineCtx, {
-                type: 'line',
-                data: lineData,
-                options: lineOptions
-            });
-
-            // Bar Chart (TRANSACTION)
-            var barCtx = document.getElementById("transaction").getContext("2d");
-            var barData = {
-                labels: ["2021", "2022", "2023", "2024", "2025"],
-                datasets: [{
-                    label: "TRANSACTION",
-                    data: [500, 1000, 800, 400, 900],
-                    backgroundColor: ["#FF6384", "#FF5733", "#45B39D", "#AAB7B8", "#9966FF"],
-                    borderWidth: 1
-                }]
-            };
-            var barOptions = {
-                responsive: true,
-                scales: {
-                    x: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'AREA'
-                        }
-                    }
-                }
-            };
-            new Chart(barCtx, {
-                type: 'bar',
-                data: barData,
-                options: barOptions
-            });
-
-            // Another Bar Chart
-            var barCtx = document.getElementById("areaScalingChart").getContext("2d");
-            var barData = {
-                labels: ["San Roque", "Pasonanca", "Calarian", "Ayala"],
-                datasets: [{
-                    label: "AREA SCALING",
-                    data: [25, 15, 10, 5],
-                    backgroundColor: ["#FF6384", "#FF5733", "#45B39D", "#AAB7B8"],
-                    borderWidth: 1
-                }]
-            };
-            var barOptions = {
-                responsive: true,
-                scales: {
-                    x: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'AREA'
-                        }
-                    },
-                    y: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'NO. OF'
-                        }
-                    }
-                }
-            };
-            new Chart(barCtx, {
-                type: 'bar',
-                data: barData,
-                options: barOptions
-            });
-        });
-    </script>
+    
 </body>
 </html>
 

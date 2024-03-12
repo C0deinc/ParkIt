@@ -1,12 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
+/********RENTER********/
+.container {
+      padding: 15px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+}
+    .close-btn {
+      float: left;
+      cursor: pointer;
+    }
+    .close {
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        color:#06283D; /* Adjust as needed */
+    }
+
+
+
+/* Styles for the unique card */
+.vehicle-card {
+    width: 290px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    border: 1px solid #06283D; /* Example border styling */
+    border-radius: 5px; /* Example border radius */
+    background-color: #fff; /* Example background color */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+/* Custom styles for the card and its contents */
+.vehicles-card {
+    width: 290px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    border: 1px solid #707070; /* Example border styling */
+    border-radius: 5px; /* Example border radius */
+    background-color: #fff; /* Example background color */
+    margin: 0 auto; /* Center the card horizontally */
+   
+  }
+  
+  .card-titles {
+    margin-bottom: 0;
+    color: #707070;
+    font-weight: bold;
+  }
+  
+
+.progressbar li{
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+}
+  
+.progressbar{
+    counter-reset: step;
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+  .progressbar li p{
+    color:#1363DF;
+    font-weight: bold;
+}
+
+.progressbar li img {
+    width: 30px; /* Fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as blocks */
+    margin: 0 auto 10px auto; /* Center the images vertically and add margin */
+}
+
+.progressbar li:before {
+    content: "•"; /* Use a bullet character for the dot */
+    width: 30px;
+    height: 30px;
+    border: 2px solid #DFF6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background: #DFF6FF;
+    color: #06283D;
+    font-size: 30px; /* Adjust the font size as needed */
+} 
+  
+.progressbar li:after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 3px;
+    background: #DFF6FF;
+    top: 15px;
+    left: -50%;
+    z-index: -1;   
+}
+
+.progressbar li:first-child:after{
+    content: none;
+}
+
+.progressbar li.active + li:after {
+    background: #1363DF;
+}
+
+.progressbar li.active + li:before{
+    border-color: #1363DF;
+    background: #1363DF;
+    color: #06283D;
+}
+
+.message {
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Adjust the font size */
+    color: #1363DF;
+    margin-top: 0; /* Adjust margin as needed */
+    font-weight: bold;
+  }
+
+  .confirm{
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Adjust the font size */
+    color: #47B5FF;
+    margin-top: 15px; /* Adjust margin as needed */
+    font-weight: bold;
+  }
+  .confirm img{
+    width: 30px;
+    height: 30px;
+}
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Media query for screen width between 320px and 480px */
+@media screen and (max-width: 480px) {
+    .profile img {
+        width: 30vw;
+        height: 16vh;
+    }
+
+    .progressbar li:before {
+        width: 10px; /* Adjusted size for smaller screens */
+        height: 10px; /* Adjusted size for smaller screens */
+        line-height: 7px; /* Adjusted line-height for smaller screens */
+        font-size: 0.8rem; /* Adjusted font size for smaller screens */
+        align-items: center;
+    }
+
+    .progressbar li:after {
+        top: 4px; /* Adjusted position for smaller screens */
+    }
+
+    .progressbar li img {
+        width: 10px; /* Adjusted width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto 5px auto; /* Adjusted margin for smaller screens */
+    }
+
+    .progressbar li p{
+        font-size: 0.4rem;
+    }
+    .message {
+        font-size: 0.4rem; /* Adjust the font size for smaller screens */
+    }
+    .confirm p{
+        font-size: 0.4rem;
+        margin-bottom: 10px;
+    }
+    .confirm img{
+        width: 10px;
+        height: 10px;
+    }
+    .lotspace{
+        margin:0%;
+        font-size: 0.8rem;
+    }
+    .fa-star.checked {
+        font-size: 10px; /* Adjust star size for 320px width */
+      }
+      .ref_detail {
+        /* Adjust the width to fit the screen */
+        width: 100%;
+        /* Adjust other styles as needed */
+    }
+    .ref_detail h6 {
+        font-size: 0.8rem;/* Adjust font size or other styles as needed */
+    }
+    .ref_detail .ref {
+       font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************ADMIN******************/
 .navbar {
-    background-color: #06283D; /* Bootstrap secondary color */
+    background-color: #06283D;
+    /* Bootstrap secondary color */
 }
 
 .navbar img {
@@ -44,14 +279,14 @@
 }
 
 .nav.flex-column .nav-link.active {
-    background-color: #E8E8E8; 
+    background-color: #E8E8E8;
     color: #06283D;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
 .nav.flex-column .nav-link:hover {
-    background-color: #E8E8E8; 
-    color: #06283D; 
+    background-color: #E8E8E8;
+    color: #06283D;
     border-radius: 15px;
 }
 
@@ -62,14 +297,16 @@
 }
 
 .my-custom-hr {
-        height: 3px; 
-        width: 96%;
-        background-color: #ccc; 
-        margin: 0 auto; 
+    height: 3px;
+    width: 96%;
+    background-color: #ccc;
+    margin: 0 auto;
 }
+
 /* Dropdown divider */
 
-#updatedTime, #raisedAmount {
+#updatedTime,
+#raisedAmount {
     font-size: small;
     color: gray;
 }
@@ -84,19 +321,21 @@
 }
 
 .numbered-heading::before {
-    content: "320"; 
+    content: "320";
     position: absolute;
-    top: -10px; 
-    left: 50%; 
+    top: -10px;
+    left: 50%;
     transform: translateX(-50%);
     font-size: 33px;
     font-weight: bold;
-    color: #06283D; 
+    color: #06283D;
 }
 
 .custom-img {
-    max-width: 100px; /* Set the maximum width */
-    max-height: 150px; /* Set the maximum height */
+    max-width: 100px;
+    /* Set the maximum width */
+    max-height: 150px;
+    /* Set the maximum height */
 }
 
 .shadow-lg {
@@ -105,7 +344,8 @@
 }
 
 .clickable-item {
-    text-decoration: none; /* Remove the underline */
+    text-decoration: none;
+    /* Remove the underline */
     color: #000000;
 }
 
@@ -114,7 +354,7 @@
     width: 180px;
     height: 180px;
     background-color: #D9D9D9;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,37 +367,37 @@
 }
 
 .circle-content img {
-    width: 100px; 
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .custom-card {
-    background-color: #D9D9D9; 
-    width: 100%; 
-    height: 250px; 
-    border-radius: 25px; 
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
     box-shadow: -6px 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
 }
 
 
 .card-title {
-    margin: 0; 
+    margin: 0;
 }
 
 .btn-primary {
-    background-color: #DFF6FF; 
-    color: black; 
-    transition: background-color 0.3s ease; 
+    background-color: #DFF6FF;
+    color: black;
+    transition: background-color 0.3s ease;
     border: none;
     border-radius: 20px;
 }
 
 .btn-primary:hover {
-    background-color: #06283D; 
-    color: black; 
+    background-color: #06283D;
+    color: black;
 }
 
 #return-btn:active {
@@ -166,39 +406,38 @@
 }
 
 .btn-secondary {
-    background-color: #D9D9D9; 
-    color: black; 
-    transition: background-color 0.3s ease; 
+    background-color: #D9D9D9;
+    color: black;
+    transition: background-color 0.3s ease;
     border: none;
     border-radius: 20px;
 }
 
 .btn-secondary:hover {
-    background-color: #06283D; 
-    color: black; 
+    background-color: #06283D;
+    color: black;
 }
+
 /* User Wallet */
 
 
 /* table */
-.table-row-header{
+.table-row-header {
     display: table;
     width: 100%;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: transparent;
     padding: 12px 0;
-    color: black;
     font-size: 13px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
     border-radius: 10px;
 }
 
-.table-row{
+.table-row {
     display: table;
     width: 100%;
     margin: 10px auto;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: transparent;
     border-radius: 10px;
     padding: 12px 0;
@@ -207,36 +446,43 @@
     box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
 
 }
-.table-cell{
+
+.table-cell {
     display: table-cell;
     width: 20%;
     text-align: center;
     padding: 4px 0;
     vertical-align: middle;
-   
+
 }
 
-.butm{
+.butm {
     border: none;
     background: none;
 }
+
 /* Table */
 
 
 /* Style the stars */
 .checked {
-    color: gold; /* Change the color of checked stars */
-    font-size: 20px; /* Adjust the size of the stars */
+    color: #06283D;
+    /* Change the color of checked stars */
+    font-size: 20px;
+    /* Adjust the size of the stars */
 }
 
 .fa-star {
-    color: gold; 
-    font-size: 20px; /* Adjust the size of the unchecked stars */
+    color: gold;
+    font-size: 20px;
+    /* Adjust the size of the unchecked stars */
 }
 
 .reviews {
-    color: blue; /* Change the color of the reviews text */
-    font-size: 16px; /* Adjust the size of the reviews text */
+    color: #06283D;
+    /* Change the color of the reviews text */
+    font-size: 16px;
+    /* Adjust the size of the reviews text */
 }
 
 .location {
@@ -249,4 +495,73 @@
     color: #666;
 }
 
-  
+.pagination {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/*Proof of Payment*/
+.receipt {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.receipt-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.receipt-title {
+    font-size: 24px;
+    color: #06283D;
+}
+.receipt-content {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.receipt-item span {
+    color: #555;
+}
+
+
+/* reported incident images */
+.border-table tr {
+    border: 1px solid black;
+    text-align: start;
+}
+.border-table th{
+    padding-left: 1em;
+}
+.details h4{
+    text-align:start ;
+}

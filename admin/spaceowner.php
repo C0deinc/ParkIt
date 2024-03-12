@@ -4,7 +4,7 @@
 <?php
     $title = 'Dashboard';
     $index_page = 'active';
-    require_once('./include/head.php');
+    require_once('../include/head.php');
 ?>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="row">
             <!-- Sidebar -->
             <?php
-            require_once('./include/sidebar.php');
+            require_once('../include/sidebar.php');
             ?>
 
             <!-- Main Content -->
@@ -27,7 +27,7 @@
                 </div>
 
                 <h1 class="h2 mx-auto mt-4 text-center" style="text-decoration: underline;">
-                    <img src="/admin/images/group-of-users.png" alt="Total User Image" class="img-fluid" width="35" height="35">
+                    <img src="../images/group-of-users.png" alt="Total User Image" class="img-fluid" width="35" height="35">
                     SPACE OWNER NAME
                 </h1>
 
@@ -36,7 +36,7 @@
                     <div class="col-md-4 mt-3 ms-3">
                         <div class="card shadow-lg" style="width: 18rem; background-color:#06283D;">
                             <div class="card-body text-center">
-                                <img src="/admin/images/photo.png" class="card-img-top rounded-circle" alt="person details" style="width: 200px; height: 200px;">
+                                <img src="../images/photo.png" class="card-img-top rounded-circle" alt="person details" style="width: 200px; height: 200px;">
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="col-md-4 mt-3 ms-3">
                         <div class="card shadow-lg" style="width: 18rem; background-color:#06283D;">
                             <div class="card-body text-center">
-                                <img src="/admin/images/photo.png" class="card-img-top rounded-circle" alt="persons space" style="width: 200px; height: 200px;">
+                                <img src="../images/photo.png" class="card-img-top rounded-circle" alt="persons space" style="width: 200px; height: 200px;">
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                 <div class="row mt-4 justify-content-center">
                     <div class="col-md-3">
                         <div class="card shadow-lg text-center" style="width: 15rem; background-color:#06283D;">
-                            <img src="/admin/images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
+                            <img src="../images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
                             <div class="card-body mt-3" style="background-color: #D9D9D9;">
                                 <h4>PASONANCA</h4>
                             </div>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card shadow-lg text-center" style="width: 15rem; background-color:#06283D;">
-                            <img src="/admin/images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
+                            <img src="../images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
                             <div class="card-body mt-3" style="background-color: #D9D9D9;">
                                 <h4>UPPER CALARIAN</h4>
                             </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card shadow-lg text-center" style="width: 15rem; background-color:#06283D;">
-                            <img src="/admin/images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
+                            <img src="../images/photo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Person's Picture" style="width: 200px; height: 200px;">
                             <div class="card-body mt-3" style="background-color: #D9D9D9;">
                                 <h4>STA. MARIA</h4>
                             </div>
@@ -139,13 +139,9 @@
     </div>
 
     <?php
-        require_once('./include/js.php');
+        require_once('../include/js.php');
+        require_once('../scripts/script.php');
     ?>
-
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

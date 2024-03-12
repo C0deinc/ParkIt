@@ -4,7 +4,7 @@
 <?php
     $title = 'Wallet';
     $wallet_page = 'active';
-    require_once('./include/head.php');
+    require_once('../include/head.php');
 ?>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="row">
             <!-- Sidebar -->
             <?php
-            require_once('./include/sidebar.php');
+            require_once('../include/sidebar.php');
             ?>
 
              <!-- Main Content -->
@@ -27,20 +27,20 @@
                                     <div class="row">
                                         <div class="col-md-4 text-center">
                                             <a href="wallet.php" class="clickable-item">
-                                                <img src="/admin/images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">TRANSACTION</h5>     
+                                                <img src="../images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">TRANSACTION</h5>     
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_user.php" class="clickable-item">
-                                                <img src="/admin/images/group-of-users.png" alt="Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">USER</h5>
+                                                <img src="../images/group-of-users.png" alt="Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">USER</h5>
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_deposit.php" class="clickable-item">
-                                                <img src="/admin/images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">DEPOSIT</h5>
+                                                <img src="../images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">DEPOSIT</h5>
                                             </a>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
                                         <a href="pending.php" class="card-link">
                                             <div class="card custom-card">
                                                 <div class="card-body">
-                                                    <h1 class="card-title text-center" style="margin: 80px;">PENDING</h1>
+                                                    <h1 class="card-title text-center" style="margin: 80px; font-weight: bold;">PENDING</h1>
                                                 </div>
                                             </div>
                                         </a>
@@ -70,7 +70,7 @@
                                         <a href="history.php" class="card-link">
                                             <div class="card custom-card">
                                                 <div class="card-body">
-                                                    <h1 class="card-titles text-center" style="margin: 80px;">HISTORY</h1>
+                                                    <h1 class="card-titles text-center" style="margin: 80px; font-weight: bold;">HISTORY</h1>
                                                 </div>
                                             </div>
                                         </a>
@@ -85,13 +85,9 @@
     </div>
 
     <?php
-        require_once('./include/js.php')
+        require_once('../include/js.php');
+        require_once('../scripts/script.php');
     ?>
 
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
 </body>
 </html>
