@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header justify-content-center flex-column">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Warning Account</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: bold;">Warning Account</h1>
       </div>
       <form action="post" method="post">
         <div class="modal-body">
@@ -44,12 +44,8 @@
             </div>
           </form>
         </div>
-        <div class="containline d-flex justify-content-center" style="width: 100%;">
-          <div class="line" style="border-bottom: 1px solid black; width: 90%;"></div>
-        </div>
         <div class="modal-footer d-flex justify-content-center">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Okay</button>
+        <button type="submit" class="btn" style="background-color: #06283D; color: white;">Okay</button>
         </div>
       </form>
     </div>

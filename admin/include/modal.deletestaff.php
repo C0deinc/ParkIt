@@ -3,7 +3,7 @@
         <div class="modal-content p-4">
             <div class="modal-header justify-content-center flex-column">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h1 class="modal-title fs-5" id="deletestaffmodal">ADD STAFF</h1>
+                <h1 class="modal-title fs-5" id="deletestaffmodal" style="font-weight: bold;">ADD STAFF</h1>
             </div>
             <form action="post" method="post">
                 <div class="modal-body">
