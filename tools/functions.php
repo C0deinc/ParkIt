@@ -1,47 +1,67 @@
 <?php
-    function fetchUserDetails() {
-        try {
-            // Assuming you have a method to fetch user details from the database
-            $stmt = $this->connection->query("SELECT email, gender, contact, barangay, city, province, zipcode FROM users");
-            $results = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            return $results;
-        } catch (PDOException $e) {
-            throw new Exception("Query error: " . $e->getMessage());
+     
+    function validate_field($field){
+        $field = htmlentities($field);
+        if(strlen(trim($field))<1){
+            return false;
+        }else{
+            return true;
         }
     }
 
-    function fetchUsername() {
-        try {
-            // Assuming 'username' is the column you want to fetch
-            $stmt = $this->connection->query("SELECT username FROM account LIMIT 1");
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    function validate_radio($POST){
+        if(isset($POST['sex']) && !empty($POST['sex'])){
+            return true; // At least one radio button is selected
+        } else {
+            return false; // No radio button is selected
+        }
+    }
 
-            // Return the username
-            return isset($result['username']) ? $result['username'] : null;
-        } catch (PDOException $e) {
-            throw new Exception("Query error: " . $e->getMessage());
+    function validate_radio1($POST){
+        if(isset($POST['accountverification']) && !empty($POST['accountverification'])){
+            return true; // At least one radio button is selected
+        } else {
+            return false; // No radio button is selected
         }
     }
-    function fetchFullNames() {
-        try {
-            // Assuming you have a method to fetch full names from the database
-            $stmt = $this->connection->query("SELECT firstname, middlename, lastname FROM account");
-            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-            $fullNames = [];
-            foreach ($results as $result) {
-                // Concatenate first name, middle name, and last name
-                $fullName = $result['firstname'] . ' ' . $result['middlename'] . ' ' . $result['lastname'];
-                $fullNames[] = $fullName;
-            }
-    
-            // Concatenate all full names into a single string
-            $fullNamesString = implode(', ', $fullNames);
-    
-            return $fullNamesString;
-        } catch (PDOException $e) {
-            throw new Exception("Query error: " . $e->getMessage());
+
+    function validate_contact($contactnumber){
+        // Remove any non-numeric characters from the input
+        $clean_contact = preg_replace("/[^0-9]/", "", $contactnumber);
+        
+        // Validate if the cleaned input contains only digits and has a specific length requirement
+        if(strlen($clean_contact) >= 10 && strlen($clean_contact) <= 15 && ctype_digit($clean_contact)){
+            return true; // Valid contact number
+        } else {
+            return false; // Invalid contact number
         }
     }
+
+    function validate_email($email){
+        // Basic validation using filter_var
+        return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+    }   
+
+    function validate_password($password) {
+        $password = htmlentities($password);
+        
+        if (strlen(trim($password)) < 1) {
+            return "Password cannot be empty.";
+        } elseif (strlen($password) < 8) {
+            return "Password must be at least 8 characters long.";
+        } else {
+            return "success"; // Indicates successful validation
+        }
+    }    
+
+    function validate_cpw($password, $confirmpassword){
+        $pw = htmlentities($password);
+        $cpw = htmlentities($confirmpassword);
+        if(strcmp($pw, $cpw) == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 ?>
