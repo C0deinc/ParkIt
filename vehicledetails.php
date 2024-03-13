@@ -5,11 +5,12 @@
     require_once './classes/signin.class.php';
 
     // Ensure user is logged in and the user ID is available in the session
-    if(!isset($_SESSION['id'])) {
+    if(!isset($_SESSION['user_id'])) {
         // Redirect to login page or handle unauthorized access
         header("Location: signin.php");
         exit();
     }
+
 
     require_once './classes/vehicles.class.php';
     require_once  './tools/functions.php';
@@ -18,9 +19,9 @@
         $vehicle = new Vehicle();
     
         // Retrieve user ID from session
-        $userId = $_SESSION['id'];
+        $userId = $_SESSION['user_id'];
         // Ensure user is logged in and the user ID is available in the session
-    if(!isset($_SESSION['id'])) {
+    if(!isset($_SESSION['user_id'])) {
         // Redirect to login page or handle unauthorized access
         header("Location: vehicledetails.php");
         exit();
@@ -64,13 +65,13 @@
 <?php
     $title = 'Vehicle Information';
     $dashboard_page = 'active';
-    require_once('./include/head.php');
+    require_once('./includes/head.php');
 ?>
 <body style="display: flex; justify-content:center; align-items:center;">
 <div class="text-center"><b></b></div>
     <div>
         <div>
-            <div class="text-center"><img src="../img/logobluee.png" height="100" width="100" alt=""></div>
+            <div class="text-center"><img src="../images/logobluee.png" height="100" width="100" alt=""></div>
             <div class="text-center"><b>For Renter</b></div><br>
         </div>
         <?php
@@ -205,7 +206,7 @@
         </div>
     </div>
     <?php
-    require_once('./include/js.php');
+    require_once('./includes/js.php');
     ?>
 </body>
 </html>

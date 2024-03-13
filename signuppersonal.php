@@ -54,12 +54,12 @@
 <?php
     $title = 'Sign Up';
     $dashboard_page = 'active';
-    require_once('./include/head.php');
+    require_once('./includes/head.php');
 ?>
 <body style="display: flex; justify-content:center; align-items:center;">
     <div>
         <div>
-            <div class="text-center"><img src="../img/logobluee.png" height="100" width="100" alt=""></div>
+            <div class="text-center"><img src="../images/logobluee.png" height="100" width="100" alt=""></div>
             <div class="text-center">Sign in to your account</div><br>
         </div>
         <?php
@@ -336,12 +336,12 @@
             </form>
         </div>
         <br><div class="text-center" style="font-size: 12px;">Or sign up with</div><br>
-        <div class="text-center" style="font-size: 12px; border: 0.1px groove; padding: 3px; margin-bottom: 10px;"><img src="../img/googleicon.jpg" height="25" width="25" alt=""> Sign in with google</div>
-        <div class="text-center" style="font-size: 12px; border: 0.1px groove; padding: 3px;"><img src="../img/fbicon.png" height="25" width="25" alt=""> Sign in with Facebook</div><br>
+        <div class="text-center" style="font-size: 12px; border: 0.1px groove; padding: 3px; margin-bottom: 10px;"><img src="../images/googleicon.jpg" height="25" width="25" alt=""> Sign in with google</div>
+        <div class="text-center" style="font-size: 12px; border: 0.1px groove; padding: 3px;"><img src="../images/fbicon.png" height="25" width="25" alt=""> Sign in with Facebook</div><br>
         <div class="text-center" style="font-size: 12px;">Already have an account? <a href="signin.php" style="font-size: 12px; color: black;">Sign In</a></div>
     </div>
     <?php
-    require_once('./include/js.php');
+    require_once('./includes/js.php');
     ?>
 </body>
 </html>

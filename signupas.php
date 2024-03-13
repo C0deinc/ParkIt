@@ -3,11 +3,11 @@
 <?php
     $title = 'Sign Up';
     $dashboard_page = 'active';
-    require_once('./include/head.php');
+    require_once('./includes/head.php');
 ?>
 <body style="display: flex; justify-content:center; align-items:center;">
     <div>
-        <div class="text-center"><img src="../img/logobluee.png" height="100" width="100" alt=""></div>
+        <div class="text-center"><img src="../images/logobluee.png" height="100" width="100" alt=""></div>
         <div style="font-size: 12px;">Sign up as: </div><br>
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="width: 250px;">
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -21,7 +21,7 @@
         </div>
     </div>
     <?php
-    require_once('./include/js.php');
+    require_once('./includes/js.php');
     ?>
 </body>
 </html>
