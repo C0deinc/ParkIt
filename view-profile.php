@@ -44,7 +44,7 @@ require_once('./includes/head.php');
     <section class="profile-section-one mt-5">
             <div class="container pt-5">
                     <div class="profile-picture container">
-                            <img src="/images/IMG_0024.jpg" alt="" class="img-responsive rounded-circle border border-black">
+                            <img src="/images/default-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
             </div>
 

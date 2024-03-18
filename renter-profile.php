@@ -40,7 +40,7 @@ require_once('./includes/head.php');
 <body>
     <div class="container-fluid" style="background-color: #06283D; width: 100vw; height: 10vh;">
         <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
-            <i><a href="/index.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
+            <i><a href="/home_page.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
             <li class="text-white fs-5" style="padding-left: 50px;">
                 <h4>My account</h4>
             </li>

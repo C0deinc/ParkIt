@@ -40,7 +40,7 @@ require_once('./includes/renter-nav.php');
                   <p class="fs-5">To be the premier destination for parking rentals in Zamboanga City, while empowering property owners with a sustainable source of income.</p>
               </div>
               <div class="col-lg-6 col-md-12 col-12">
-                  <div class="LazyLoad is-visible d-flex justify-content-center align-items-lg-center" style="height: auto;">
+                  <div class="LazyLoad is-visible d-flex justify-content-center align-items-lg-center" style="height: auto; margin-bottom: 100px;">
                       <img src="./images/aboutUs.png " alt="About Us" width="629" height="602" class="img-fluid w-75 h-auto">
                   </div>
               </div>
