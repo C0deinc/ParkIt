@@ -25,7 +25,6 @@ if (isset($_SESSION['user_details'])) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -33,7 +32,7 @@ $title = 'Profile';
 $home_page = '';
 require_once('./includes/head.php');
 ?>
-<body style="background-color:#47B5FF">
+<body style="background-color:#fff;" class="profile-body" >
         <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
             <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
                 <i><a href="/renter-profile.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
@@ -41,38 +40,40 @@ require_once('./includes/head.php');
             </ul>
         </div>
 
-    <section class="profile-section-one mt-5">
-            <div class="container pt-5">
+    <div class="mt-5 container">
+            <div class="container py-5 rounded-4" style="background-color: #47B5FF; ">
+            <i class="bi bi-pencil-square fs-4"></i>
                     <div class="profile-picture container">
                             <img src="/images/default-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
             </div>
-
-            <div class="container pt-5 text-center">
-                    <div class="">
-                    <i class="fa-solid fa-address-card me-4 text-white"></i>
-                    <a class="text-decoration-none text-white profile-details">
+            <div class="p-lists-container rounded-4 mt-2"  style="background-color: #47B5FF; ">
+            <div class="p-view-profile px-5 py-4 d-flex">
+            <i class="fa-solid fa-address-card me-4"></i>
+                    <a class="text-decoration-none text-white profile-details" style="color: #06283D;">
                     <?php echo $firstname . ' ' . $middlename . ' ' . $lastname; ?>
                     </a>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa-envelope me-4 text-white"></i>
-                    <?php echo $email; ?>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-venus-mars me-4 text-white"></i>
-                    <?php echo $sex; ?>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-mobile me-4 text-white"></i>
-                    <?php echo $contactnumber; ?>
-                    </div>
-                    <div class="pt-3">
-                    <i class="fa-solid fa fa-location-dot me-4 text-white"></i>
-                    <?php echo $address; ?>
-                    </div>
             </div>
-    </section>
+            <div class="p-my-vehicle px-5 py-4">
+            <i class="fa-solid fa-envelope me-4"></i>
+                    <span style="color: #06283D;"><?php echo $email; ?></span>
+            </div>
+            <div class="p-my-rentals px-5 py-4">
+            <i class="fa-solid fa fa-venus-mars me-4"></i>
+                    <span style="color: #06283D;"><?php echo $sex; ?></span>
+            </div>
+
+            <div class="p-history px-5 py-4">
+            <i class="fa-solid fa fa-mobile me-4"></i>
+                    <span style="color: #06283D;"><?php echo $contactnumber; ?></span>
+
+            </div>
+            <div class="p-help-center px-5 py-4">
+            <i class="fa-solid fa fa-location-dot me-4"></i>
+                    <span style="color: #06283D;"><?php echo $address; ?></span>
+            </div>
+        </div>
+    </div>
     <?php
       require_once('includes/js.php');
       ?>

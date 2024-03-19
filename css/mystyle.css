@@ -234,94 +234,96 @@ footer ul li a{
       margin: 50px auto;
       padding: 100px 60px;
   }  
-  .wrapper .accordion-button {
-      font-size: 0.9rem;
-      font-weight: 500;
-  }
-  
-  .wrapper .accordion-button:hover {
-      background-color: #f8f8f8;
-  }
-  
-  .wrapper .accordion-button:focus {
-      box-shadow: none;
-  }
-  
-  .wrapper .accordion-button::after {
-      background-size: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #c8c8c8;
-      background-position: center center;
-      border-radius: 50%;
-  }
-  
-  .wrapper .accordion-button:not(.collapsed) {
-      color: #000;
-      background-color: #f7f7f7;
-      font-weight: 600;
-      border-bottom: 1px solid #ddd !important;
-  }
-  
-  .accordion-button:not(.collapsed)::after {
-      border-color: #1E88E5;
-  }
-  
-  .wrapper .accordion-button.collapsed {
-      border-bottom: 1px solid #ddd !important;
-  }
-  
-  .wrapper .accordion-collapse.show {
-      border-bottom: 1px solid #ddd !important;
-  }
-  
-  .wrapper .accordion-collapse {
-      background-color: #eaf3fa;
-  }
-  
-  .wrapper .accordion-collapse ul li {
-      line-height: 2rem;
-      width: 100%;
-      padding: 0.5rem 1.3rem;
-  }
-  
-  .wrapper .accordion-collapse ul li:hover {
-      background-color: #c9e7ff;
-  }
-  
-  .wrapper .accordion-collapse ul li a {
-      text-decoration: none;
-      color: #333;
-      font-size: 0.85rem;
-      font-weight: 400;
-      display: block;
-  }
-  
-  .wrapper .accordion-collapse ul li:hover a {
-      color: #222;
-  }
-  
-  @media (max-width: 777px) {
-      .wrapper {
-          margin: 50px 20px;
-      }
-  }
-  
-  @media (max-width: 365px) {
-      .wrapper {
-          margin: 50px 10px;
-      }
-  
-      .w-75 {
-          width: 90% !important;
-      }
-  }
-  
+/* Accordion Button Styles */
+.wrapper .accordion-button {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.wrapper .accordion-button:hover {
+    background-color: #f8f8f8;
+}
+
+.wrapper .accordion-button:focus {
+    box-shadow: none;
+}
+
+.wrapper .accordion-button::after {
+    background-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c8c8c8;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.wrapper .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #f7f7f7;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.wrapper .accordion-button:not(.collapsed)::after {
+    border-color: #1E88E5;
+}
+
+.wrapper .accordion-button.collapsed {
+    border-bottom: 1px solid #ddd !important;
+}
+
+/* Accordion Collapse Styles */
+.wrapper .accordion-collapse.show {
+    border-bottom: 1px solid #ddd !important;
+}
+
+.wrapper .accordion-collapse {
+    background-color: #eaf3fa;
+}
+
+.wrapper .accordion-collapse ul li {
+    line-height: 2rem;
+    width: 100%;
+    padding: 0.5rem 1.3rem;
+}
+
+.wrapper .accordion-collapse ul li:hover {
+    background-color: #c9e7ff;
+}
+
+.wrapper .accordion-collapse ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: block;
+}
+
+.wrapper .accordion-collapse ul li:hover a {
+    color: #222;
+}
+
+/* Media Queries */
+@media (max-width: 777px) {
+    .wrapper {
+        margin: 50px 20px;
+    }
+}
+
+@media (max-width: 365px) {
+    .wrapper {
+        margin: 50px 10px;
+    }
+
+    .w-75 {
+        width: 90% !important;
+    }
+}
+
  /*------------------------------FAQS------------------------------*/
 
  .faq-body{
-    display: grid;
     justify-content: center;
     align-items: center;
  }
@@ -411,11 +413,6 @@ footer ul li a{
 .p-view-profile, .p-my-reviews, .p-my-vehicle, .p-my-rentals, .p-history, .p-help-center {
     display: -webkit-box;
 }
-
-.p-help-center {
-    border-bottom: 1px solid lightgray;
-}
-
 .parkit-wallet-container:hover, .p-view-profile:hover, .p-my-reviews:hover, .p-my-vehicle:hover, .p-my-rentals:hover, .p-history:hover, .p-help-center:hover, .p-settings:hover, .p-terms-condition-privacy:hover, .p-switch-to-space-owner:hover, .p-logout:hover {
     background-color: rgba(83, 83, 83, 0.1);
 }
@@ -427,6 +424,19 @@ footer ul li a{
 
 .p-lists-container p {
     color: #06283D;
+}
+
+.fa-solid{
+   color: #06283D; 
+}
+
+.profile-body{
+    height: 100px;
+}
+
+.bi-pencil-square{
+  float: right;
+  margin-right: 20px;
 }
 
 /*PROFILE PAGE*/
@@ -490,5 +500,18 @@ footer ul li a{
     margin-bottom: -1px;
     margin-top: -1px;
 }
+
+.btn:active{
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -o-transform: scale(0.99);
+}
+
+.gif{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
 /*OTHER PAGES*/
 

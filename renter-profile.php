@@ -112,7 +112,7 @@ require_once('./includes/head.php');
                 <a href="" class="text-decoration-none" style="color: #06283D;">Settings</a>
             </div>
             <div class="p-switch-to-space-owner px-5 py-4 d-flex flex-row justify-content-between align-items-center">
-                <p>Switch to <span style="color: #06283D" class="fw-bold">Space Owner</span></p>
+                <p class="m-0" >Switch to <span style="color: #06283D" class="fw-bold">Space Owner</span></p>
                 <i><a href="" class="fa-solid fa-repeat fa-lg me-4 mb-3 text-decoration-none" style="color: #06283D;"></a></i>
             </div>
             <div class="p-logout px-5 py-4">

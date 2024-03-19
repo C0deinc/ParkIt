@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start text-white" style=" background: #06283D;">
+<footer class="text-center text-lg-start text-white pt-3" style=" background: #06283D;">
   <!-- Grid container -->
   <div class="container">
     <!--Grid row-->
@@ -7,7 +7,7 @@
       <div class="col-lg-3 col-md-6 mb-md-0">
 
         <div class="d-flex align-items-center justify-content-center mx-auto px-0">
-          <img src="/images/logo-removebg-preview.png" class="foot-logo mt-5" height="70" alt=""
+          <img src="/images/logo-removebg-preview.png" class="foot-logo mt-3" height="70" alt=""
                loading="lazy"/>
         </div>  
       </div>

@@ -23,16 +23,17 @@ require_once('./includes/renter-nav.php');
     <section class="background-container p-5 d-flex flex-column justify-content-center">
         <h2 class="fw-bolder fs-1" style="color: #06283D;">Discover your ideal space</h2>
         <p class="custom-font-size mt-1 m-0 bc-text" style="color: #06283D;">“Unlock convenience, reserve your space. Your hassle-free parking solution is just a click away.”</p>
-        <a href="#" class="btn btn-primary btn-lg btn-join mt-3">Join Us Now</a>
+        <a href="#" class="btn btn-primary btn-lg btn-join mt-3 shadow-lg">Join Us Now</a>
     </section>
 
     <section class="section-one mt-5 p-5">
         <div class="row d-flex g-0">
-            <div class="col-md-4 col-lg-6 p-5 d-flex flex-column justify-content-center ">
+            <div class="col-md-6 col-lg-6 p-3 d-flex flex-column justify-content-center ">
                 <h2 class="text-center" >About ParkIt</h2>
                 <p class="mt-3 text-center">Parkit serves as a platform facilitating a mutually beneficial relationship between renters and space owners. Renters enjoy a user-friendly interface for finding and reserving parking spaces, while space owners can monetize their unused spaces by listing them on the platform.</p>
             </div>
-            <div class="col-md-4 col-lg-6 p-0">
+            <div class="col-md-6 col-lg-6 p-0 d-flex justify-content-center align-items-center">
+                 <img class="w-50 rounded-5 gif" src="./images/car-parking.gif" alt="">
             </div>
         </div>
     </section>
@@ -69,7 +70,7 @@ require_once('./includes/renter-nav.php');
             </div>
             <div class="col-lg-6 col-md-4 p-5 d-flex flex-column justify-content-center align-items-center">
                 <img src="./images/pic5.png" alt="" class="img-fluid" style="width: 150px; height: auto;">
-                <a href="#" class="btn btn-primary btn-lg btn-find mt-4">Find Your Space</a>
+                <a href="#" class="btn btn-primary btn-lg btn-find mt-4 shadow-lg">Find Your Space</a>
             </div>
             <svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fff" fill-opacity="1" d="M0,32L30,58.7C60,85,120,139,180,149.3C240,160,300,128,360,117.3C420,107,480,117,540,133.3C600,149,660,171,720,165.3C780,160,840,128,900,96C960,64,1020,32,1080,53.3C1140,75,1200,149,1260,149.3C1320,149,1380,75,1410,37.3L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
     </div>
