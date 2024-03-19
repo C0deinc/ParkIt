@@ -6,7 +6,7 @@ if (isset($_SESSION['user']) && $_SESSION['user'] == 'user') {
     exit();
 }
 
-require_once './classes/signin.class.php';
+require_once('./classes/signin.class.php');
 
 if (isset($_POST['signin'])) {
     $account = new Signin();
@@ -19,7 +19,7 @@ if (isset($_POST['signin'])) {
         $_SESSION['user_id'] = $account->user_id;
 
         // Check if it's the user's first login
-        if (isset($_SESSION['first_login'])) {
+        if (!isset($_SESSION['first_login'])) {
             // You need to define a method in Signin class to check if it's the first login
             if ($account->is_first_login()) {
                 $_SESSION['first_login'] = 1;

@@ -4,16 +4,8 @@
 
     require_once './classes/signin.class.php';
 
-    // Ensure user is logged in and the user ID is available in the session
-    if(!isset($_SESSION['user_id'])) {
-        // Redirect to login page or handle unauthorized access
-        header("Location: signin.php");
-        exit();
-    }
-
-
-    require_once './classes/vehicles.class.php';
-    require_once  './tools/functions.php';
+    require_once('./classes/vehicles.class.php');
+    require_once('./tools/functions.php');
 
     if(isset($_POST['vehicle'])){
         $vehicle = new Vehicle();
