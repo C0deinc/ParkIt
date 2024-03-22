@@ -57,7 +57,7 @@ require_once('./includes/head.php');
         </div>
 
     <div class="mt-5 container">
-            <div class="container py-4 rounded-4 pb-0" style="background-color: #47B5FF; ">
+            <div class="container py-4 rounded-4 pb-0 shadow-lg" style="background-color: #fff; ">
             <i><a class="bi bi-pencil-square fs-4 text-decoration-none" style="color: #06283D;" href="profile.edit.php"></a></i>
                     <div class="profile-picture container">
                             <img src="/images/default-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
@@ -70,7 +70,7 @@ require_once('./includes/head.php');
                         <?php endif; ?>
                     </div>
             </div>
-            <div class="p-lists-container rounded-4 mt-2"  style="background-color: #47B5FF; ">
+            <div class="p-lists-container rounded-4 mt-2 shadow-lg"  style="background-color: #fff; ">
             <div class="p-view-profile px-5 py-4 d-flex">
             <i class="fa-solid fa-address-card me-4"></i>
                     <a class="text-decoration-none text-white profile-details" style="color: #06283D;">

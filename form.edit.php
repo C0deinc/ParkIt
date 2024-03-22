@@ -53,7 +53,7 @@ require_once('./includes/head.php');
             <a class="text-white text-decoration-none"><h3>Edit profile</h3></a>
 </div>
 
-<div class="mt-5 mx-auto container pb-3">
+<div class="mt-5 mx-auto container">
             <div class="container py-4 rounded-4 pb-0 shadow-lg" style="background-color: #ffff; ">
                     <div class="profile-picture container d-flex justify-content-center align-items-center">
                     <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -70,7 +70,7 @@ require_once('./includes/head.php');
                     <input type="text" class="form-control mx-auto" placeholder="Username" id="Uname">
                     </div>
             </div>
-            <form class="row g-3 px-4 rounded-4 shadow-lg mt-3 mx-auto" style="background-color: #ffff; ">
+            <form class="row g-3 py-4 px-4 rounded-4 pb-0 shadow-lg mt-3 pb-3 mx-auto" style="background-color: #ffff; ">
                 <div class="col-md-4">
                     <label for="Fname" class="form-label">First name</label>
                     <input type="text" class="form-control" id="Fname">
@@ -89,7 +89,7 @@ require_once('./includes/head.php');
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">City</label>
@@ -98,7 +98,7 @@ require_once('./includes/head.php');
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">State</label>
                     <select id="inputState" class="form-select">
-                    <option selected></option>
+                    <option selected>Choose...</option>
                     <option>...</option>
                     </select>
                 </div>
@@ -107,8 +107,8 @@ require_once('./includes/head.php');
                     <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col-12 container d-flex justify-content-center align-items-center py-4 px-3 pb-3">
-                    <button button type="submit" class="btn btn-txt text-white rounded-4" style="background-color: #06283D; margin-right: 10px; ">Save changes</button>
-                    <a href="view-profile.php" class="btn btn-txt btn-secondary rounded-4">Close</a>
+                    <button button type="submit" class="btn text-white rounded-4" style="background-color: #06283D; margin-right: 10px; ">Save changes</button>
+                    <button type="button" class="btn btn-secondary rounded-4" data-bs-dismiss="modal">Close</button>
                 </div>
             </form>
     </div>

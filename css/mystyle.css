@@ -146,11 +146,17 @@ footer ul li a{
     .responsive-font-example {
       font-size: 20px;
     }
+    #Uname{
+        width: 10vw;
+    }
   }
 
   @media (max-width: 414px) {
-    .responsive-font-example {
+    .responsive-font-example, .form-label {
       font-size: 15px;
+    }
+    #Uname{
+        width: 40vw;
     }
   }
 
@@ -160,70 +166,40 @@ footer ul li a{
     }
   }
   @media (min-width: 768px) {
-    .custom-text {
+    .custom-text, .form-label  {
       font-size: 1.2rem;
     }
   }
   @media (min-width: 992px) {
-    .custom-text {
+    .custom-text{
       font-size: 1.4rem;
     }
   }
   @media (max-width: 576px) {
-    .custom-font-size {
+    .custom-font-size{
       font-size: 1rem;
     }
+    .form-label {
+        font-size: 12px;
+      }
+      .btn-txt{
+        font-size: 12px
+      }
   }
   @media (min-width: 577px) and (max-width: 768px) {
     .custom-font-size {
       font-size: 1.1rem;
     }
-  }
+    .btn-txt{
+        font-size: 15px
+      }
+}
   @media (min-width: 769px) {
     .custom-font-size {
       font-size: 1.2rem;
     }
   }
 /*------------------------------MEDIA QUERY-------------------------------*/
-
-/*------------------------------ADMIN-LOGIN-------------------------------*/
-.login-body {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5f5f5;
-  }
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-  }
-  
-  .form-signin .checkbox {
-    font-weight: 400;
-  }
-  
-  .form-signin .form-floating:focus-within {
-    z-index: 2;
-  }
-  
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-  /*------------------------------ADMIN-LOGIN-------------------------------*/
 
 
   /*------------------------------FAQS------------------------------*/
@@ -440,6 +416,10 @@ footer ul li a{
   margin-right: 20px;
 }
 
+.form-label{
+    color: #06283D;
+}
+
 /*PROFILE PAGE*/
 
 /*PARKING LOT SPACE PAGE*/
@@ -516,3 +496,46 @@ footer ul li a{
 
 /*OTHER PAGES*/
 
+/*edit profile picture*/
+.profile-pic {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid rgba(0,0,0,.5);
+}
+
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    z-index: 10000;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;;
+    padding: 4em 1em 2em 0;
+    font-size: small;
+}
+
+form input[type="file"] {
+          display: none;
+          cursor: pointer;
+ }
+
+ .profile-picture form{
+    height: 180px;
+    width: 180px;
+ }
+
+
+/*edit profile picture*/
