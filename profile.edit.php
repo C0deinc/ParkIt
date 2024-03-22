@@ -49,16 +49,12 @@ $home_page = '';
 require_once('./includes/head.php');
 ?>
 <body style="background-color:#fff;" class="profile-body" >
-        <div class="container-fluid" style="background-color: #06283D;  width: 100vw; height: 10vh;">
-            <ul class="list-group list-group-horizontal" style="padding: 30px 30px;">
-                <i><a href="/renter-profile.php" class="bi bi-arrow-left fs-3 text-white text-decoration-none" style="padding-top: 2px;"></a></i>
-                <li class="text-white fs-5" style="padding-left: 50px;"><h4>Profile</h4></li>
-            </ul>
-        </div>
+<div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: #06283D;  width: 100vw; height: 10vh;">
+            <a class="text-white text-decoration-none"><h3>Edit profile</h3></a>
+</div>
 
-    <div class="mt-5 container">
-            <div class="container py-4 rounded-4 pb-0" style="background-color: #47B5FF; ">
-            <i><a class="bi bi-pencil-square fs-4 text-decoration-none" style="color: #06283D;" href="profile.edit.php"></a></i>
+<div class="mt-5 container">
+            <div class="container py-4 rounded-4 pb-0 shadow-lg" style="background-color: #ffff; ">
                     <div class="profile-picture container">
                             <img src="/images/default-pic.jpg" alt="" class="img-responsive rounded-circle border border-black">
                     </div>
@@ -70,7 +66,7 @@ require_once('./includes/head.php');
                         <?php endif; ?>
                     </div>
             </div>
-            <div class="p-lists-container rounded-4 mt-2"  style="background-color: #47B5FF; ">
+            <div class="p-lists-container rounded-4 mt-2 shadow-lg"  style="background-color: #ffff;">
             <div class="p-view-profile px-5 py-4 d-flex">
             <i class="fa-solid fa-address-card me-4"></i>
                     <a class="text-decoration-none text-white profile-details" style="color: #06283D;">
@@ -78,8 +74,8 @@ require_once('./includes/head.php');
                     </a>
             </div>
             <div class="p-my-vehicle px-5 py-4">
-            <i class="fa-solid fa-envelope me-4"></i>
-                    <span style="color: #06283D;"><?php echo $email; ?></span>
+                <i class="fa-solid fa-envelope me-4"></i>
+                <input value="<?= $email ?>" type="email" class="form-control w-50 pb-1 border-0 10px" id="email" placeholder="" name="email" style="background-color: #fff;">
             </div>
             <div class="p-my-rentals px-5 py-4">
             <i class="fa-solid fa fa-venus-mars me-4"></i>
@@ -96,7 +92,13 @@ require_once('./includes/head.php');
                     <span style="color: #06283D;"><?php echo $address; ?></span>
             </div>
         </div>
+        <div class="container d-flex justify-content-center  align-items-center py-3 px-3">
+            <button button type="submit" class="btn text-white" style="background-color: #47B5FF; margin-right: 10px; ">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
     </div>
+   
     <?php
       require_once('includes/js.php');
       ?>
