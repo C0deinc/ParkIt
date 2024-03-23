@@ -48,7 +48,7 @@
                       <a class="nav-link <?= $browse_page ?>" href="#">Browse</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link <?= $hiw_page ?>" href="#">How it Works</a>
+                        <a class="nav-link <?= $hiw_page ?>" href="./hiw.php">How it Works</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link <?= $about_page ?>" href="./aboutus.php">About us</a>
