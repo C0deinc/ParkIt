@@ -152,7 +152,7 @@ footer ul li a{
   }
 
   @media (max-width: 414px) {
-    .responsive-font-example, .form-label {
+    .responsive-font-example, .edit-label {
       font-size: 15px;
     }
     #Uname{
@@ -166,7 +166,7 @@ footer ul li a{
     }
   }
   @media (min-width: 768px) {
-    .custom-text, .form-label  {
+    .custom-text, .edit-label  {
       font-size: 1.2rem;
     }
   }
@@ -179,7 +179,7 @@ footer ul li a{
     .custom-font-size{
       font-size: 1rem;
     }
-    .form-label {
+    .edit-label {
         font-size: 12px;
       }
       .btn-txt{
@@ -416,7 +416,7 @@ footer ul li a{
   margin-right: 20px;
 }
 
-.form-label{
+.edit-label{
     color: #06283D;
 }
 

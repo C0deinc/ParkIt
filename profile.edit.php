@@ -72,31 +72,31 @@ require_once('./includes/head.php');
             </div>
             <form class="row g-3 px-4 rounded-4 shadow-lg mt-3 mx-auto" style="background-color: #ffff; ">
                 <div class="col-md-4">
-                    <label for="Fname" class="form-label">First name</label>
+                    <label for="Fname" class="form-label edit-label">First name</label>
                     <input type="text" class="form-control" id="Fname">
                 </div>
                 <div class="col-md-4">
-                    <label for="Mname" class="form-label">Middle name</label>
+                    <label for="Mname" class="form-label edit-label">Middle name</label>
                     <input type="text" class="form-control" id="Mname">
                 </div>
                 <div class="col-md-4">
-                    <label for="Lname" class="form-label">Last name</label>
+                    <label for="Lname" class="form-label edit-label">Last name</label>
                     <input type="text" class="form-control" id="Lname">
                 </div>
                 <div class="col-12">
-                    <label for="email" class="form-label">Email</label>
+                    <label for="email" class="form-label edit-label">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
+                    <label for="inputAddress" class="form-label edit-label">Address</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
+                    <label for="inputCity" class="form-label edit-label">City</label>
                     <input type="text" class="form-control" id="inputCity">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
+                    <label for="inputState" class="form-label edit-label">State</label>
                     <select id="inputState" class="form-select">
                     <option selected></option>
                     <option>...</option>
