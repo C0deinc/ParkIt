@@ -231,7 +231,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div>
                                                 <div class="row p-3">
                                                     <div class="col-sm-12 col-lg-6">
@@ -276,7 +276,6 @@
                                 <div class="py-3">
                                     <p class="fw-bold">C1</p>
                                 </div>
-                                
                                 <div class="py-3" style="border-top: 1px solid lightgray;">
                                     <p>Occupied</p>
                                 </div>
