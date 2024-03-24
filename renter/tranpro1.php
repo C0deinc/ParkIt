@@ -6,9 +6,6 @@ require_once('../include/head.user.php');
 ?>
 
 <body>
-<?php
-    require_once('../include/cancellation.rent.php');
-?>
 
     <div class="container sm">
         <div class="row border-bottom py-0 mb-0">
@@ -23,7 +20,7 @@ require_once('../include/head.user.php');
     <div class="container py-0">
         <section class="user_data">
             <div class="row border-bottom py-0 mb-0">
-                <div class="col-3 py-1 px-0">
+                <div class="col-2 py-1 px-0">
                     <div class="profile d-flex justify-content-center align-items-center">
                         <img src="../images/photo.png" class="rounded-circle" alt="" srcset=""
                             style="width: 10vw; height: 6vh;">
@@ -89,7 +86,7 @@ require_once('../include/head.user.php');
             </div>
         </div>
     </div>
-    <div class="message">
+    <div class="message mt-3">
         <p>Please wait for the confirmation to proceed for the next process.</p>
     </div>
 
@@ -121,7 +118,7 @@ require_once('../include/head.user.php');
                     </div>
                 </div>
                 <div class="col-3 px-3 d-flex text-center align-items-center mr-0" style="font-size: 0.4rem;  ">
-                    <a href="#"> View Details</a>
+                    <a href="#" class="view-details">View Details</a>
                 </div>
             </div>
         </div>
@@ -141,51 +138,51 @@ require_once('../include/head.user.php');
                         <!-- Adjust height as needed -->
                         <div class="row">
                             <div class="col-9 text-start align-items-center px-4">
-                                <h6 class="card-titles mt-1 px-0" style="font-size: 0.9rem;">Vehicle 1</h6>
+                                <h6 class="card-titles mt-2 px-0" style="font-size: 0.8rem;">Vehicle 1</h6>
                             </div>
-                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0"
-                                style="font-size: 0.4rem;">
-                                <a href="#"> View Details</a>
+                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0" style="font-size: 0.4rem;">
+                                <a href="#" class="view-details">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row border-bottom px-3 mt-3">
+                <div class="row px-4 mt-3">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Driver</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle</th>
-                            <td style="font-size: 0.6rem;">Motorcycle</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Plate Numer</th>
-                            <td style="font-size: 0.6rem;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
+                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
                         </tr>
                     </table>
+                    <hr style="margin: 10px 0;">
                 </div>
-                <div class="row mb-3 px-3 mt-2">
+            
+                <div class="row mb-3 px-4">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Rate</th>
-                            <td style="font-size: 0.6rem;">Hourly</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Payment Method</th>
-                            <td>
+                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
+                            <td style="text-align: right;">
                                 <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
                             </td>
-
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Space</th>
-                            <td style="font-size: 0.6rem;">M2</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
+                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
                         </tr>
                     </table>
                 </div>
@@ -194,7 +191,7 @@ require_once('../include/head.user.php');
         <div class="row mb-2 d-flex flex-column mt-0">
             <div class="col-sm-12 text-center">
                 <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#cancellation"
-                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Reservation</button>
+                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Arrival</button>
             </div>
         </div>
     </div>
@@ -207,51 +204,51 @@ require_once('../include/head.user.php');
                         <!-- Adjust height as needed -->
                         <div class="row">
                             <div class="col-9 text-start align-items-center px-4">
-                                <h6 class="card-titles mt-1 px-0" style="font-size: 0.9rem;">Vehicle 2</h6>
+                                <h6 class="card-titles mt-2 px-0" style="font-size: 0.8rem;">Vehicle 2</h6>
                             </div>
-                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0"
-                                style="font-size: 0.4rem;">
-                                <a href="#"> View Details</a>
+                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0" style="font-size: 0.4rem;">
+                                <a href="#" class="view-details">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row border-bottom px-3 mt-3">
+                <div class="row px-4 mt-3">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Driver</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle</th>
-                            <td style="font-size: 0.6rem;">Motorcycle</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Plate Numer</th>
-                            <td style="font-size: 0.6rem;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
+                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
                         </tr>
                     </table>
+                    <hr style="margin: 10px 0;">
                 </div>
-                <div class="row mb-3 px-3 mt-2">
+    
+                <div class="row mb-3 px-4">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Rate</th>
-                            <td style="font-size: 0.6rem;">Hourly</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Payment Method</th>
-                            <td>
+                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
+                            <td style="text-align: right;">
                                 <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
                             </td>
-
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Space</th>
-                            <td style="font-size: 0.6rem;">M2</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
+                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
                         </tr>
                     </table>
                 </div>
@@ -260,7 +257,7 @@ require_once('../include/head.user.php');
         <div class="row mb-2 d-flex flex-column mt-0">
             <div class="col-sm-12 text-center">
                 <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#cancellation"
-                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Reservation</button>
+                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Arrival</button>
             </div>
         </div>
     </div>
@@ -273,51 +270,51 @@ require_once('../include/head.user.php');
                         <!-- Adjust height as needed -->
                         <div class="row">
                             <div class="col-9 text-start align-items-center px-4">
-                                <h6 class="card-titles mt-1 px-0" style="font-size: 0.9rem;">Vehicle 3</h6>
+                                <h6 class="card-titles mt-2 px-0" style="font-size: 0.8rem;">Vehicle 3</h6>
                             </div>
-                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0"
-                                style="font-size: 0.4rem;">
-                                <a href="#"> View Details</a>
+                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0" style="font-size: 0.4rem;">
+                                <a href="#" class="view-details">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row border-bottom px-3 mt-3">
+                <div class="row px-4 mt-3">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Driver</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle</th>
-                            <td style="font-size: 0.6rem;">Motorcycle</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Plate Numer</th>
-                            <td style="font-size: 0.6rem;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
+                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
                         </tr>
                     </table>
+                    <hr style="margin: 10px 0;">
                 </div>
-                <div class="row mb-3 px-3 mt-2">
+                
+                <div class="row mb-3 px-4 ">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Rate</th>
-                            <td style="font-size: 0.6rem;">Hourly</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Payment Method</th>
-                            <td>
+                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
+                            <td style="text-align: right;">
                                 <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
                             </td>
-
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Space</th>
-                            <td style="font-size: 0.6rem;">M2</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
+                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
                         </tr>
                     </table>
                 </div>
@@ -326,7 +323,7 @@ require_once('../include/head.user.php');
         <div class="row mb-2 d-flex flex-column mt-0">
             <div class="col-sm-12 text-center">
                 <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#cancellation"
-                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Reservation</button>
+                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Arrival</button>
             </div>
         </div>
     </div>
@@ -339,51 +336,51 @@ require_once('../include/head.user.php');
                         <!-- Adjust height as needed -->
                         <div class="row">
                             <div class="col-9 text-start align-items-center px-4">
-                                <h6 class="card-titles mt-1 px-0" style="font-size: 0.9rem;">Vehicle 4</h6>
+                                <h6 class="card-titles mt-2 px-0" style="font-size: 0.8rem;">Vehicle 4</h6>
                             </div>
-                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0"
-                                style="font-size: 0.4rem;">
-                                <a href="#"> View Details</a>
+                            <div class="col-3 px-3 d-flex text-end align-items-center mr-0" style="font-size: 0.4rem;">
+                                <a href="#" class="view-details">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row border-bottom px-3 mt-3" >
+                <div class="row px-4 mt-3">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Driver</th>
-                            <td style="font-size: 0.6rem;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
+                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Vehicle</th>
-                            <td style="font-size: 0.6rem;">Motorcycle</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Plate Numer</th>
-                            <td style="font-size: 0.6rem;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
+                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
                         </tr>
                     </table>
+                    <hr style="margin: 10px 0;">
                 </div>
-                <div class="row mb-3 px-3 mt-2">
+                
+                <div class="row mb-3 px-4">
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Rate</th>
-                            <td style="font-size: 0.6rem;">Hourly</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
+                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Payment Method</th>
-                            <td>
+                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
+                            <td style="text-align: right;">
                                 <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
                             </td>
-
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem;">Picked Space</th>
-                            <td style="font-size: 0.6rem;">M2</td>
+                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
+                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
                         </tr>
                     </table>
                 </div>
@@ -392,11 +389,14 @@ require_once('../include/head.user.php');
         <div class="row mb-2 d-flex flex-column mt-0">
             <div class="col-sm-12 text-center">
                 <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#cancellation"
-                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Reservation</button>
+                    style="background-color: #1363DF; color: white; font-size:0.7rem;">Cancel Arrival</button>
             </div>
         </div>
     </div>
     
+    <?php
+        require_once('../scripts/script.php');
+    ?>
 
 </body>
 </html>

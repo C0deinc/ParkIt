@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$title = 'Transaction Process 3';
+$title = 'Transaction Process 4';
 require_once('../include/head.user.php');
 ?>
 
@@ -118,7 +118,7 @@ require_once('../include/head.user.php');
                         <p><span class="fa fa-star checked"></span> 1.5k Reviews</p>
                     </div>
                 </div>
-                <div class="col-3 px-3 d-flex text-center align-items-center mr-0" style="font-size: 0.4rem;  ">
+                <div class="col-3 py-0 d-flex text-center align-items-center mr-0" style="font-size: 0.4rem; padding-right:0;">
                     <a href="#" class="view-details">View Details</a>
                 </div>
             </div>
@@ -131,16 +131,23 @@ require_once('../include/head.user.php');
         </div>
         <div class="ref d-flex justify-content-between align-items-end px-3">
             <p class="me-5" style="color: #707070; font-weight: bold;">Reference code</p>
-                <p id="text" class="ms-auto me-0">
-                    <span style="color: #06283D; font-weight: bold;">12345678</span>
-                    <button id="copy-text-btn" style="border: none; background: none;">
-                        <i class="fa-regular fa-clone" style="color: #74C0FC;"></i>
-                    </button>
-                </p>
+            <p id="text" class="ms-auto me-0">
+                <span id="text-content" style="color: #06283D; font-weight: bold;">12345678</span>
+                <button id="copy-text-btn" style="border: none; background: none;" onclick="copyText()">
+                    <i class="fa-regular fa-clone" style="color: #74C0FC;"></i>
+                </button>
+            </p>
         </div>
     </section>
 
-    <div class="container mt-1 py-0 ">
+    <div class="container mt-0 py-0">
+        <div class="d-flex justify-content-between">
+            <button type="button" style="border: none; background: none; color:#06283D; font-weight:bold; font-size:0.6rem;">Skip All</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#payall" style="border: none; background: none; color:#1363DF; font-weight:bold; font-size:0.6rem;">Pay All</button>
+        </div>
+    </div>
+
+    <div class="container mt-1 py-0">
         <div class="row">
             <div class="col-md-6 offset-md-1">
                 <div class="vehicles-card">
@@ -156,51 +163,31 @@ require_once('../include/head.user.php');
                         </div>
                     </div>
                 </div>
-                <div class="row px-4 mt-3">
+                <div class="row px-4 mt-2">
+                    <h5 class="card-titles mt-1 px-0 mb-2" style="font-size: 0.7rem; text-align: left; font-weight: bold; color: #06283D ">Pay Base Rate</h5>
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;  color:#707070;">Base Rate</th>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
-                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left; color:#707070;">Total Amount</th>
+                            <td style="font-size: 0.6rem; text-align: right; font-weight:bold; color:#06283D;">&#8369;50.00</td>
+
                         </tr>
                     </table>
-                    <hr style="margin: 10px 0;">
+                    <hr>
                 </div>
-        
-                <div class="row mb-3 px-4">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
-                            <td style="text-align: right;">
-                                <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
-                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
-                        </tr>
-                    </table>
+                <div class="row ">
+                    <div class="col-sm-6 offset-sm-6 text-end"> <!-- Offset to push buttons to the right -->
+                        <button type="button" class="btn skip me-2">Skip</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#pay" class="btn pay me-2">Pay</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container mt-2 py-0 ">
+    <div class="container mt-3 py-0">
         <div class="row">
             <div class="col-md-6 offset-md-1">
                 <div class="vehicles-card">
@@ -216,51 +203,31 @@ require_once('../include/head.user.php');
                         </div>
                     </div>
                 </div>
-                <div class="row px-4 mt-3">
+                <div class="row px-4 mt-2">
+                    <h5 class="card-titles mt-1 px-0 mb-2" style="font-size: 0.7rem; text-align: left; font-weight: bold; color: #06283D ">Pay Base Rate</h5>
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;  color:#707070;">Base Rate</th>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
-                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left; color:#707070;">Total Amount</th>
+                            <td style="font-size: 0.6rem; text-align: right; font-weight:bold; color:#06283D;">&#8369;50.00</td>
+
                         </tr>
                     </table>
-                    <hr style="margin: 10px 0;">
+                    <hr>
                 </div>
-                
-                <div class="row mb-3 px-4">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
-                            <td style="text-align: right;">
-                                <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
-                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
-                        </tr>
-                    </table>
+                <div class="row ">
+                    <div class="col-sm-6 offset-sm-6 text-end"> <!-- Offset to push buttons to the right -->
+                        <button type="button" class="btn skip me-2">Skip</button>
+                        <button type="button" class="btn pay me-2">Pay</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container mt-2 py-0 ">
+    <div class="container mt-3 py-0">
         <div class="row">
             <div class="col-md-6 offset-md-1">
                 <div class="vehicles-card">
@@ -276,51 +243,31 @@ require_once('../include/head.user.php');
                         </div>
                     </div>
                 </div>
-                <div class="row px-4 mt-3">
+                <div class="row px-4 mt-2">
+                    <h5 class="card-titles mt-1 px-0 mb-2" style="font-size: 0.7rem; text-align: left; font-weight: bold; color: #06283D ">Pay Base Rate</h5>
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;  color:#707070;">Base Rate</th>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
-                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left; color:#707070;">Total Amount</th>
+                            <td style="font-size: 0.6rem; text-align: right; font-weight:bold; color:#06283D;">&#8369;50.00</td>
+
                         </tr>
                     </table>
-                    <hr style="margin: 10px 0;">
+                    <hr>
                 </div>
-                
-                <div class="row mb-3 px-4">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
-                            <td style="text-align: right;">
-                                <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
-                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
-                        </tr>
-                    </table>
+                <div class="row ">
+                    <div class="col-sm-6 offset-sm-6 text-end"> <!-- Offset to push buttons to the right -->
+                        <button type="button" class="btn skip me-2">Skip</button>
+                        <button type="button" class="btn pay me-2">Pay</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container mt-2 py-0 ">
+    <div class="container mt-3 py-0">
         <div class="row">
             <div class="col-md-6 offset-md-1">
                 <div class="vehicles-card">
@@ -336,62 +283,34 @@ require_once('../include/head.user.php');
                         </div>
                     </div>
                 </div>
-                <div class="row px-4 mt-3">
+                <div class="row px-4 mt-2">
+                    <h5 class="card-titles mt-1 px-0 mb-2" style="font-size: 0.7rem; text-align: left; font-weight: bold; color: #06283D ">Pay Base Rate</h5>
                     <table style="width: 100%;">
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle Owner</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
+                            <th style="font-size: 0.6rem; text-align: left;  color:#707070;">Base Rate</th>
                         </tr>
                         <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Driver</th>
-                            <td style="font-size: 0.6rem; text-align: right;">(You)</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Vehicle</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Motorcycle</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Plate Number</th>
-                            <td style="font-size: 0.6rem; text-align: right;">JEFF 123</td>
+                            <th style="font-size: 0.6rem; text-align: left; color:#707070;">Total Amount</th>
+                            <td style="font-size: 0.6rem; text-align: right; font-weight:bold; color:#06283D;">&#8369;50.00</td>
                         </tr>
                     </table>
-                    <hr style="margin: 10px 0;">
+                    <hr>
                 </div>
-                
-                <div class="row mb-3 px-4">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Rate</th>
-                            <td style="font-size: 0.6rem; text-align: right;">Hourly</td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Payment Method</th>
-                            <td style="text-align: right;">
-                                <img src="../images/gcash.png" alt="Image Description" style="max-width: 10%; height: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="font-size: 0.6rem; text-align: left;">Picked Space</th>
-                            <td style="font-size: 0.6rem; text-align: right;">M2</td>
-                        </tr>
-                    </table>
+                <div class="row ">
+                    <div class="col-sm-6 offset-sm-6 text-end"> <!-- Offset to push buttons to the right -->
+                        <button type="button" class="btn skip me-2">Skip</button>
+                        <button type="button" class="btn pay me-2">Pay</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
     <?php
         require_once('../scripts/script.php');
+        require_once('../scripts/script.copycode.php');
+        require_once('../include/modal.pay.php');
     ?>
 </body>
 </html>
-
-    
-
-
-    
-
-    
-
-
