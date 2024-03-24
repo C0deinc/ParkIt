@@ -4,7 +4,7 @@
 <?php
     $title = 'Wallet';
     $wallet_page = 'active';
-    require_once('./include/head.php');
+    require_once('../include/head.php');
 ?>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="row">
             <!-- Sidebar -->
             <?php
-            require_once('./include/sidebar.php');
+            require_once('../include/sidebar.php');
             ?>
 
             <!-- Main Content -->
@@ -27,20 +27,20 @@
                                     <div class="row">
                                         <div class="col-md-4 text-center">
                                             <a href="wallet.php" class="clickable-item">
-                                                <img src="/admin/images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">TRANSACTION</h5>     
+                                                <img src="../images/transaction.png" alt="Transaction Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">TRANSACTION</h5>     
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_user.php" class="clickable-item">
-                                                <img src="/admin/images/group-of-users.png" alt="Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">USER</h5>
+                                                <img src="../images/group-of-users.png" alt="Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">USER</h5>
                                             </a>
                                         </div>
                                         <div class="col-md-4 border-start text-center">
                                             <a href="wallet_deposit.php" class="clickable-item">
-                                                <img src="/admin/images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
-                                                <h5 class="card-title text-center">DEPOSIT</h5>
+                                                <img src="../images/deposit.png" alt="Deposit Image" class="img-fluid custom-img">
+                                                <h5 class="card-title text-center" style="font-weight: bold;">DEPOSIT</h5>
                                             </a>
                                         </div>
                                     </div>
@@ -58,9 +58,9 @@
                                 <div class="card-body">
                                     <div class="row mb-2">
                                         <div class="d-flex align-items-center">
-                                            <h4 class="card-title text-left">Deposit</h4>
+                                            <h4 class="card-title text-left" style="font-weight: bold;">Deposit</h4>
                                             <div class="search-keyword d-flex ms-auto">
-                                                <div class="input-group">
+                                                <div class="input-group pe-4">
                                                     <input type="text" name="keyword" id="keyword" placeholder="Search..." class="form-control">
                                                     <button class="btn btn-outline-secondary brand-bg-color" type="button">
                                                         <i class="fa fa-search color-white" aria-hidden="true"></i>
@@ -96,7 +96,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <img src="/admin/images/user.png" alt="Profile Image" width="30" height="30">
+                                                        <img src="../images/user.png" alt="Profile Image" width="30" height="30">
                                                     </td>
                                                     <td>Mark Tan</td>
                                                     <td>01/04/23</td>
@@ -121,5 +121,11 @@
             </main>
         </div>
     </div>
+
+    <?php
+        require_once('../include/js.php');
+        require_once('../scripts/script.php');
+    ?>
+
 </body>
 </html>

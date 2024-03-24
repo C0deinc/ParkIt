@@ -1,112 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pending Page</title>
+<?php
+    $title = 'Users';
+    $users_page = 'active';
+    require_once('../include/head.php');
+?>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link href="./vendor/dataTable-1.13.6/datatables.min.css" rel="stylesheet">
-    <!-- js whatever -->
-    <?php
-    require_once('./scripts/script.php');    
-    
-    ?>
-    <!-- Chart.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body style="overflow: hidden;">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #06283D;">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="logo1.png" alt="logo" width="60" height="30">
-        </a>
-    </nav>
-
+<body>
     <!-- Page Content -->
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html">
-                                <img src="dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="user.html">
-                                <img src="user.png" alt="users" width="20" height="20" class="mr-2">
-                                Users
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reports.html">
-                                <img src="report.png" alt="report" width="20" height="20" class="mr-2">
-                                Reports
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="staff.html">
-                                <img src="staff.png" alt="staff" width="20" height="20" class="mr-2">
-                                Staff
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="setting.html">
-                                <img src="setting.png" alt="setting" width="20" height="20" class="mr-2">
-                                Setting
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="wallet.html">
-                                <img src="wallet.png" alt="wallet" width="20" height="20" class="mr-2">
-                                Wallet
-                            </a>
-                        </li>
-                        <div class="dropdown-divider"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                <img src="logout.png" alt="logout" width="20" height="20" class="mr-2">
-                                Log Out
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <?php
+            require_once('../include/sidebar.php')
+            ?>
 
             <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6" style="padding-top: 40px;">
-                <div class="d-flex ms-5 mt-4">
-                    <h4 class="h3 m">Pending Account</h1>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
+            <div class="d-flex ms-5 mt-4">
+                    <h4 class="h3 m" style="font-weight: bold;">Pending Accounts</h1>
                 </div>
-                <div class="d-flex ms-5 mt-4" id="MyButtons" class="d-flex mb-md-2 mb-lg-0 col-12 col-md-auto">ContentPDF</div>
 
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="row mb-2">
+                                <div class="d-flex align-items-center">
+                                    <div class="text-center mt-3">
+                                        <button class="btn btn-success mr-2" onclick="exportToExcel()">Excel</button>
+                                        <button class="btn btn-success mr-2" onclick="exportToPDF()">PDF</button>
+                                        <button class="btn btn-success mr-2" onclick="copyToClipboard()">Copy</button>
+                                    </div>
+                                    <div class="search-keyword d-flex ms-auto">
+                                        <div class="input-group pe-4">
+                                            <input type="text" name="keyword" id="keyword" placeholder="Search..." class="form-control">
+                                            <button class="btn btn-outline-secondary brand-bg-color" type="button">
+                                                <i class="fa fa-search color-white" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div id="MyButtons" class="d-flex mb-md-2 mb-lg-0 col-12 col-md-auto"></div>
+                                    <div class="form-group col-2 col-sm-auto flex-sm-grow-1 flex-lg-grow-0 ms-lg-auto">
+                                        <select name="staff-role" id="staff-role" class="form-select me-md-2">
+                                            <option value="">Sort by</option>
+                                            
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>  
 
-                <!-- Overview Content Goes Here -->
-
-
+                        <!-- Table -->
+                        <div class="table-responsive mt-4">
+                            <table class="table text-center ">
+                                <colgroup>
+                                    <col style="width: 5%;">
+                                    <col style="width: 30%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 10%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Account</th>
+                                        <th scope="col">Date Applied</th>
+                                        <th scope="col">More</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align: middle;">
+                                            <img class="rounded-circle" src="../images/jau.jpg" alt="Profile Image" width="50" height="50">
+                                        </td>
+                                        <td style="vertical-align: middle;">Mark Tan</td>
+                                        <td style="vertical-align: middle;">Personal</td>
+                                        <td style="vertical-align: middle;">01/02/2024</td>
+                                        <td style="vertical-align: middle;">
+                                        <a href="pending.personal.account.information.php">
+                                            <button class="butm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;">
+                                            <img class="rounded-circle" src="../images/photo.png" alt="Profile Image" width="50" height="50">
+                                        </td>
+                                        <td style="vertical-align: middle;">Mark Tan</td>
+                                        <td style="vertical-align: middle;">Company</td>
+                                        <td style="vertical-align: middle;">01/02/2024</td>
+                                        <td style="vertical-align: middle;">
+                                        <a href="pending.company.account.information.php">
+                                            <button class="butm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 offset-lg-6 d-flex justify-content-end align-items-center">
+                                <a href="users.php" class="btn btn-primary" id="return-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i> Return</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
 
     <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/pending.js"></script>
+    <?php
+        require_once('../include/js.php');
+        require_once('../scripts/script.php');
 
+    ?>
 
 </body>
-
 </html>

@@ -1,85 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Feedback and Reviews</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+
+<?php
+    $title = 'Reports';
+    $report_page = 'active';
+    require_once('../include/head.php');
+?>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #06283D;">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="logo1.png" alt="logo" width="60" height="30">
-        </a>
-    </nav>
-     
+
     <!-- Page Content -->
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html">
-                                <img src="dashboard.png" alt="dashboard" width="20" height="20" class="mr-2">
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="users.html">
-                                <img src="user.png" alt="users" width="20" height="20" class="mr-2">
-                                Users
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="reports.html">
-                                <img src="report.png" alt="report" width="20" height="20" class="mr-2">
-                                Reports
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="staff.html">
-                                <img src="staff.png" alt="staff" width="20" height="20" class="mr-2">
-                                Staff
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="setting.html">
-                                <img src="setting.png" alt="setting" width="20" height="20" class="mr-2">
-                                Setting
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="wallet.html">
-                                <img src="wallet.png" alt="wallet" width="20" height="20" class="mr-2">
-                                Wallet
-                            </a>
-                        </li>
-                        <div class="dropdown-divider"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                <img src="logout.png" alt="logout" width="20" height="20" class="mr-2">
-                                Log Out
-                            </a>
-                        </li>
-                    </ul>
+            <?php
+            require_once('../include/sidebar.php');
+            ?>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-6">
+                <!-- Overall Users -->
+                <div class="d-flex justify-content-center align-items-center pt-3 text-center">
+                        <h1 class="h2 mx-auto" style="font-weight: bold;">
+                            USER FEEDBACK AND REVIEWS
+                        </h1>
                 </div>
-            </nav>
-            
+
+                <!-- Feedback Chart -->
+                <div class="container mt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="row mb-2">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="card-title text-left" style="font-weight: bold;">TOP 5 HIGHEST</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div style="position: relative;">
+                                                        <canvas id="feedback" height="200" style="border: none;"></canvas>
+                                                        <div style="position: absolute; top: 50%; right: -450px; transform: translateY(-50%); text-align: right;">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title" style="font-size: 50px; font-weight:bold;">
+                                                                    FEEDBACK
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <hr class="my-custom-hr my-4">
+                            
+                             <!-- Feedback Chart -->
+                            <div class="row mb-2">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="card-title text-left " style="font-weight: bold;">TOP 5 HIGHEST</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div style="position: relative;">
+                                                        <canvas id="star" height="200" style="border: none;"></canvas>
+                                                        <div style="position: absolute; top: 50%; right: -400px; transform: translateY(-50%); text-align: right;">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title" style="font-size: 50px; font-weight:bold;">
+                                                                    5 STAR
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <hr class="my-custom-hr my-4">
+
+                            <!-- Company Users -->
+                            <div class="container mt-4">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="row mb-2">
+                                            <div class="d-flex align-items-center">
+                                                <h5 class="card-title text-left " style="font-weight: bold;">COMPANY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered text-center">
+                                                        <colgroup>
+                                                            <col style="width: 5%;">
+                                                            <col style="width: 25%;"> <!-- Adjust the width as needed -->
+                                                            <col style="width: 15%;">
+                                                            <col style="width: 20%;">
+                                                            <col style="width: 20%;">
+                                                            <col style="width: 15%;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">ID</th>
+                                                                <th scope="col">SPACE OWNER</th>
+                                                                <th scope="col">GENDER</th>
+                                                                <th scope="col">PHONE NO.</th>
+                                                                <th scope="col">EMAIL</th>
+                                                                <th scope="col">MORE</th>
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <td>2</td>
+                                                        <td>Jane Doe</td>
+                                                        <td>Jane Doe</td>
+                                                        <td>Jane Doe</td>
+                                                        <td>Jane Doe</td>
+                                                        <td><a href="uf&rsinput.php" class="butm">
+                                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                            </a>
+
+                                                        </td>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 offset-lg-6 d-flex justify-content-end align-items-center">
+                                <a href="reports.php" class="btn btn-primary" id="return-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i> Return</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <?php
+        require_once('../include/js.php');
+        require_once('../scripts/script.uf&rs.php');
+        require_once('../scripts/script.php');
+    ?>
 </body>
 </html>
