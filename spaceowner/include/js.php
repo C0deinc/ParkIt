@@ -1,0 +1,9 @@
+<script src="../vendor/jquery-3.7.1/jquery.min.js"></script>
+<script src="../vendor/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/parkingspace.js"></script>
+<script src="js/choosingrate.js"></script>
+<script src="js/amount.js"></script>
+<script src="js/myspacemore.js"></script>
+<script src="js/numberoffloors.js"></script>
+<script src="js/seemore.js"></script>
+<script src="js/addspace.js"></script>
