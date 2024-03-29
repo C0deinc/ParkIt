@@ -57,7 +57,7 @@
 <?php
     $title = 'Vehicle Information';
     $dashboard_page = 'active';
-    require_once('./includes/head.php');
+    require_once('./includes/login-head.php');
 ?>
 <body style="display: flex; justify-content:center; align-items:center;">
 <div class="text-center"><b></b></div>

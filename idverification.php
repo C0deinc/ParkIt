@@ -3,15 +3,15 @@
 <?php
     $title = 'ID Verification';
     $dashboard_page = 'active';
-    require_once('./include/head.php');
+    require_once('./includes/login-head.php');
 ?>
 <body style="display: flex; justify-content:center; align-items:center;">
 <div class="text-center"><b></b></div>
     <div>
-    <div class="text-center"><img src="../img/logobluee.png" height="100" width="100" alt=""></div>
+    <div class="text-center"><img src="../images/logobluee.png" height="100" width="100" alt=""></div>
         <div class="text-center"><b>ID Verification</b></div><br>
         <div style="font-size: 12px;">Choose your ID for verification</div><br>
-        
+
         <div class="mb-2" style="display: flex; justify-content: space-between; border-bottom: 1px solid black;">
             <div class="d-flex flex-start" style="font-size: 12px;"><b>Accepted ID's </b></div>
             <div class="d-flex flex-end"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>

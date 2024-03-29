@@ -4,10 +4,7 @@ session_start(); // Start the session to access session variables
 require_once('./classes/database.php');
 
 // Check if user is not logged in, then redirect to login page
-if (!isset($_SESSION['user_id'])) {
-    header("Location: signin.php");
-    exit;
-}
+
 
 // Example usage:
 try {
