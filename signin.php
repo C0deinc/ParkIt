@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['user']) && $_SESSION['user'] == 'user'){
-    header('location: home.php');
+    header('location: home_page.php');
 }
 
     //if the login button is clicked
@@ -16,7 +16,7 @@ if (isset($_SESSION['user']) && $_SESSION['user'] == 'user'){
 
         if ($account->sign_in()){
             $_SESSION['user'] = 'user';
-            header('location: home.php');
+            header('location: home_page.php');
         }else{
             $error =  'Invalid email/password. Try again.';
         }

@@ -27,7 +27,7 @@ require_once('./includes/renter-nav.php');
       <div class="container pb-5 mb-5">
           <h3 class="wp-block-heading fs-4">&nbsp;</h3>
           <h4>Parking Made Simple</h4>
-          <p>At ParkIt Rentals, we understand that finding parking can be stressful. That's why we're here to make it simple for you.</p>
+          <p>At ParkIt, we understand that finding parking can be stressful. That's why we're here to make it simple for you.</p>
           <p>Here's why you should use ParkIt Rentals:</p>
           <ul>
               <li>Convenience: Find parking spaces near your destination with ease.</li>
@@ -38,7 +38,7 @@ require_once('./includes/renter-nav.php');
               <li>Flexibility: Reserve parking spaces for short-term or long-term needs, depending on your requirements.</li>
               <li>Peace of Mind: Our customer support team is available to assist you with any parking-related queries or issues.</li>
           </ul>
-          <p class="pb-1" >With ParkIt Rentals, parking has never been easier. Say goodbye to circling the block endlessly in search of a spot and hello to stress-free parking experiences.</p>
+          <p class="pb-1" >With ParkIt, parking has never been easier. Say goodbye to circling the block endlessly in search of a spot and hello to stress-free parking experiences.</p>
       </div>
   </main>
   <?php
