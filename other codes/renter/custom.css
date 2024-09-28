@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------------------------------FOOTER-------------------------------*/
+.foot {
+    background: #06283D;
+}
+
+h5 {
+    color: white;
+    margin-top: 50px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+/*------------------------------FOOTER-------------------------------*/
+
+/*------------------------------MEDIA QUERY-------------------------------*/
+
+@media(min-width: 575px), (min-width: 991px) {
+    .sidebar {
+        background-color: #06283D;
+    }
+
+    .fa-solid {
+        font-size: x-large;
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+.sticky-header {
+    z-index: 1;
+}
+
+.fa-brands {
+    font-size: larger;
+}
+
+@media(max-width: 414px), (max-width: 768px) {
+    .offcanvas-body ul li a {
+        font-size: medium;
+    }
+
+    .foot-logo {
+        height: 30px;
+    }
+
+    .logo {
+        width: 60px;
+        cursor: pointer;
+    }
+
+    footer ul li a {
+        font-size: x-small;
+    }
+
+    footer h5 {
+        font-size: small;
+        margin-top: 20px;
+    }
+
+    footer .rights {
+        font-size: small;
+    }
+
+    .sidebar {
+        background-color: #06283D;
+    }
+
+    .fa-brands {
+        font-size: medium;
+    }
+
+    .bi {
+        width: 15px;
+        height: 15px;
+        margin-left: 0;
+    }
+
+    .space-owner-prof {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 414px) {
+    .offcanvas {
+        --bs-offcanvas-width: 415px;
+    }
+}
+
+@media(max-width: 768px) {
+    .offcanvas {
+        --bs-offcanvas-width: 800px;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+}
+
+/*------------------------------MEDIA QUERY-------------------------------*/
+
+/* carousel */
+
+#imahes {
+    height: 10vh;
+}
+
+.progressbar li {
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+}
+
+.progressbar {
+    counter-reset: step;
+    list-style: none;
+    /* Remove default list styles */
+    padding: 0;
+}
+
+.progressbar li p {
+    color: #1363DF;
+    font-weight: bold;
+}
+
+.progressbar li img {
+    width: 30px;
+    /* Fixed width for the images */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure images are displayed as blocks */
+    margin: 0 auto 10px auto;
+    /* Center the images vertically and add margin */
+}
+
+.progressbar li:before {
+    content: "•";
+    /* Use a bullet character for the dot */
+    width: 30px;
+    height: 30px;
+    border: 2px solid #DFF6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background: #DFF6FF;
+    color: #06283D;
+    font-size: 30px;
+    /* Adjust the font size as needed */
+}
+
+.progressbar li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #DFF6FF;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active+li:after {
+    background: #1363DF;
+}
+
+.progressbar li.active+li:before {
+    border-color: #1363DF;
+    background: #1363DF;
+    color: #06283D;
+}
+
+/* Media query for screen width between 320px and 480px */
+@media screen and (max-width: 480px) {
+    .profile img {
+        width: 30vw;
+        height: 16vh;
+    }
+
+    .progressbar li:before {
+        width: 10px;
+        /* Adjusted size for smaller screens */
+        height: 10px;
+        /* Adjusted size for smaller screens */
+        line-height: 7px;
+        /* Adjusted line-height for smaller screens */
+        font-size: 0.8rem;
+        /* Adjusted font size for smaller screens */
+        align-items: center;
+    }
+
+    .progressbar li:after {
+        top: 4px;
+        /* Adjusted position for smaller screens */
+    }
+
+    .progressbar li img {
+        width: 10px;
+        /* Adjusted width for smaller screens */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0 auto 5px auto;
+        /* Adjusted margin for smaller screens */
+    }
+
+    .progressbar li p {
+        font-size: 0.4rem;
+    }
+}
